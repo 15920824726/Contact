@@ -1,0 +1,8 @@
+{
+  "base": {
+    "NotNetWork": "Disconnected"
+  },
+  "main": {
+    "appName": "Contact"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "contactDetail": {
+    "Telephone": "电话号码",
+    "OtherTelephone":"其他电话号码",
+    "message": "短信",
+    "Mobile":"移动号码",
+    "Fax": "电子传真",
+    "Email": "电子邮件",
+    "Favorite":"收藏夹",
+    "Edit":"编辑",
+    "FirstName":"名",
+    "FamilyName":"姓",
+    "MobilePhone":"移动号码",
+    "Add":"添加",
+    "Update":"更新",
+    "Success":"保存成功",
+    "Failure":"保存失败",
+    "InputTelephone":"填写电话",
+    "Country":"国家",
+    "AreaCode":"区号",
+    "PhoneNumber":"电话号码",
+    "Extension":"分机号",
+    "Ok":"确认",
+    "toSearch":"搜索...",
+    "addFtSuccess":"成功加入到收藏夹中!",
+    "removeFt": "从收藏夹中移除!",
+    "NoMatchesFound":"没有匹配项"
+  }
+}

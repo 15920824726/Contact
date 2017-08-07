@@ -1,0 +1,292 @@
+
+.businessPartner-box .scroll {
+    /*margin-top: 23px;*/
+    /*padding: 10px 0;*/
+}
+
+.businessPartner-box ion-header-bar {
+    background-color: #0167b1 !important;
+}
+
+.businessPartner-box ion-header-bar button {
+    color: #fff !important;
+}
+
+#businessPartner .list ion-item {
+    /*width: 90%;*/
+  /*margin: 0 auto;*/
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+    margin-bottom: 1px;
+    padding: 10px;
+    min-height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#businessPartnerContactList .list ion-item{
+    border: none;
+    border-bottom:  1px #d3d3d3 solid;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+
+#businessPartnerContactList .list ion-item a{
+    display: flex;
+    padding: 0;
+}
+
+/*.businessPartner-box .contact-item-detail .bpName {*/
+    /*display: inline;*/
+/*}*/
+
+.businessPartner-box .contact-item-detail {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.contact-item-img {
+    display: flex;
+}
+
+.businessPartner-box .contact-item-img img {
+    max-width: 50px;
+    max-height: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.businessPartner-box .list ion-item a {
+    display: flex;
+}
+
+.businessPartner-box .list-inset {
+    margin: 0;
+    padding: 10px 10px;
+    background-color: #e7eef4;
+}
+
+.contactName {
+    line-height: 43px;
+}
+
+#addContact .item {
+    padding: 6px;
+    border: none;
+}
+
+#addContact .checkbox-icon {
+    position: absolute;
+    right: 0;
+}
+
+.businessPartner-box .bar > .button + .button:last-child {
+    right: 10px;
+}
+
+.businessPartner-box .list.list-inset {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.businessPartner-box ion-content div.scroll.padding{
+    height: 100%;
+}
+
+.businessPartner-box ion-content div.list {
+    margin-top: 55px;
+}
+
+.businessPartner-box ion-content #addContact div.list {
+    margin-top: 0;
+}
+
+.businessPartnerTitle {
+    margin: 0 auto;
+    color: #fff;
+    line-height: 33px;
+    width: 100%;
+    text-align: center;
+}
+
+/*.businessPartner-box button:last-child{
+    position: absolute;
+    bottom: 38px;
+}*/
+.add-button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.bar-header {
+    width: 100%
+}
+
+.businessPartner-box .list-inset a {
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.add-businessPartner-box ion-content div.list {
+    margin: 0 !important;
+}
+
+.add-telephone {
+    background: #fff;
+    border: 1px solid #0067b1;
+    text-align: center;
+    width: auto !important;
+    border-radius: 15px !important;
+    padding: 1px 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 0px;
+}
+
+.not-bottom-padding {
+    padding-bottom: 0;
+}
+
+.platform-form-row .platform-form-label {
+    white-space: nowrap;
+    max-width: 100px;
+    padding: 5px 0 0;
+    vertical-align: top;
+}
+
+.platform-form-group input.form-control {
+    padding: 5px 6px 2px;
+}
+
+.platform-form-group .platform-form-row .platform-form-col {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.platform-form-label + .platform-form-col {
+    margin-top: 5px;
+}
+
+.form-control {
+    display: flex;
+    width: 100%;
+    height: 28px !important;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc !important;
+    border-radius: 0;
+}
+
+.platform-form-group .control-directive {
+    flex: 1;
+    overflow: hidden;
+}
+
+.platform-form-group .control-directive {
+    flex: 1;
+    overflow: hidden;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+.form-control .input-group-content {
+    flex: 1;
+    padding: 5px 6px 2px;
+    border: none;
+    overflow: hidden;
+    height: auto;
+}
+
+.input-group-addon, .input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.btn {
+    width: 23px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    padding: 4px 4px;
+    font-size: 13px;
+    line-height: 1.42857;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+}
+
+.form-control .input-group-btn .btn {
+    height: 26px;
+    border-width: 0 0 0 1px;
+}
+
+.form-control[readonly], fieldset[disabled] .form-control, .item-input input[readonly] {
+    cursor: default;
+    background-color: #eee;
+    opacity: 1;
+}
+
+.country-search {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 55px;
+    left: 0px;
+    z-index: 13;
+}
+
+.add-contact-from {
+    padding: 14px 14px 0px 14px
+}
+
+.add-contact-from .list {
+    height: 100%
+}
+
+.add-contact-from .list .item {
+    margin: 0
+}
+
+.addContact {
+    position: absolute;
+    bottom: 40px
+}

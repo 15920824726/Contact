@@ -1,0 +1,29 @@
+{
+  "contactDetail": {
+    "Telephone": "Telefon",
+    "OtherTelephone":"OtherTelefon",
+    "message": "botschaft",
+    "Mobile":"Mobile",
+    "Fax": "Telefax",
+    "Email": "E-Mail",
+    "Favorite":"Favoriten",
+    "Edit":"Ändern",
+    "FirstName":"Vorname",
+    "FamilyName":"Nachname",
+    "MobilePhone":"Mobil",
+    "Add":"Hinzufügen",
+    "Update":"Aktualisieren",
+    "Success":"Saved Successfully",
+    "Failure":"save failure",
+    "InputTelephone":"Input Telephone",
+    "Country":"Country",
+    "AreaCode":"Area Code",
+    "PhoneNumber":"PhoneNumber",
+    "Extension":"Extension",
+    "Ok":"Ok",
+    "toSearch":"Suchen...",
+    "addFtSuccess":"",
+    "removeFt": ""
+
+  }
+}

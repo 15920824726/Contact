@@ -1,0 +1,42 @@
+{
+  "login": {
+    "loginLanguage": "Sprache",
+    "loginLanguageEnglish": "English",
+    "loginLanguageEnglishUS": "English(us)",
+    "loginLanguageGerman": "Deutsch",
+    "loginLanguageGermanDE": "Deutsch(de)",
+    "loginLanguageSpanish": " Spanish",
+    "loginLanguageChinese": "中文",
+    "loginPassword": "Passwort",
+    "loginUsername": "Benutzer",
+    "remember": "Remember",
+    "loginEnterPassword": "Passwort eingeben",
+    "loginEnterUsername": "Benutzer eingeben",
+    "loginButton": "Anmelden",
+    "loginBusyMessage": "Einloggen in Bearbeitung ... Bitte warten!",
+    "loginFailedMessage": "Anmeldung fehlerhaft! Benutzername oder Kennwort falsch! Bitte versuchen sie es nochmals!",
+    "loginSuccessfulMessage": "Anmeldung erfolgreich! Laden der Anwendung wird fortgesetzt. Bitte warten ...",
+    "appName":"Contact",
+    "loginOut": "Einloggen Out",
+    "settings": "settings",
+    "serverConfig": "Server Config",
+    "continue": "continue"
+  },
+  "userInfo": {
+    "loginName": "Benutzer Name",
+    "loginAddress": "Login-Adresse",
+    "loginPassword": "Passwort",
+    "change": "Veränderung",
+    "photo": {
+      "title":"Ändern Bild",
+      "cancel":"Stornieren",
+      "take":"Mach ein Foto",
+      "choose":"Wählen Sie bitte ein Foto",
+      "phoneGapOnly":"Ihr Gerät ist nicht über Kamera-Unterstützung",
+      "uploadFail":"Hochladen Fehler.."
+    },
+    "language":{
+      "changLanguage": "Language"
+    }
+  }
+}

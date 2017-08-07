@@ -1,0 +1,8 @@
+<ion-view id="businessPartnerMap" hide-nav-bar="true" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center">
+        <button ng-click="$ionicGoBack()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+    </ion-header-bar>
+    <ion-content class=" iContent" overflow-scroll="false" id="myMapBp">
+    </ion-content>
+</ion-view>

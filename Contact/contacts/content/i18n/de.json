@@ -1,0 +1,29 @@
+{
+  "contactDetail": {
+    "Telephone": "Telefon",
+    "OtherTelephone": "Telefon 2",
+    "message": "Nachricht",
+    "Mobile": "Mobil",
+    "Fax": "Telefax",
+    "Email": "E-Mail",
+    "Favorite": "Favoriten",
+    "Edit": "Ändern",
+    "FirstName": "Vorname",
+    "FamilyName": "Nachname",
+    "MobilePhone": "Mobil",
+    "Add": "Hinzufügen",
+    "Update": "Aktualisieren",
+    "Success": "Erfolgreich gespeichert",
+    "Failure": "Nicht gespeichert",
+    "InputTelephone": "Eingabe Telefonnummer",
+    "Country": "Land",
+    "AreaCode": "Ortsvorwahl",
+    "PhoneNumber": "Telefon-Nr.",
+    "Extension": "Durchwahl",
+    "Ok": "OK",
+    "toSearch": "Suchen...",
+    "addFtSuccess": "Zu Favoriten hinzugefügt!",
+    "removeFt": "Aus Favoriten entfernt!",
+    "NoMatchesFound":"Keine Übereinstimmungen gefunden"
+  }
+}

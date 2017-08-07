@@ -1,0 +1,10 @@
+{
+  "companyRole": {
+    "company": {
+      "selectCompany": "选择公司"
+    },
+    "role": {
+      "selectRole": "选择角色"
+    }
+  }
+}

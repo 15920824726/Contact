@@ -1,0 +1,21 @@
+ {
+  "setting": {
+    "config": {
+      "authenticationServer": "认证服务器",
+      "appServer": "云服务器",
+      "apply": "应用",
+      "title":"设置",
+      "server":"服务设置",
+      "about":"关于公司",
+      "logOut":"退出登录"
+    },
+    "about": {
+      "appName": "软件名字",
+      "company": "公司",
+      "contact": "联系方式",
+      "version": "版本",
+      "title": "关于公司"
+    }
+
+  }
+}

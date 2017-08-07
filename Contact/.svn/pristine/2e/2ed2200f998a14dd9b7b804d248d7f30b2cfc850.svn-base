@@ -1,0 +1,270 @@
+#bp-contact-detail .scroll {
+    margin-top: -1px;
+}
+
+#bp-contact-detaill ion-header-bar.bar-blue-text {
+    background-color: #0167b1;
+}
+
+
+
+#bp-contact-detail .list ion-item {
+    /*width: 90%;*/
+    margin: 0 10px;
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+
+}
+
+#bp-contact-detail .list ion-item:first-child {
+    margin: 0;
+    width: 100%;
+    background-color: #0167b1;
+    border: none;
+    padding: 16px;
+    display: flex;
+}
+
+#bp-contact-detail .list ion-item.contact-detail-with-line {
+    padding: 12px;
+}
+
+
+
+#bp-contact-detail .list ion-item:last-child button {
+    color: #000;
+}
+
+#bp-contact-detail .list ion-item:last-child button i {
+    display: block;
+    margin-bottom: -10px;
+}
+
+#bp-contact-detail .list ion-item:first-child h3 {
+    color: #fff;
+}
+
+#bp-contact-detail .list ion-item p {
+    text-indent: 24px;
+}
+
+#bp-contact-detail .list ion-item:first-child p {
+    color: #6ebced;
+    text-indent: 0;
+}
+
+#bp-contact-detail ion-header-bar {
+    border: none;
+}
+
+
+#bp-contact-detail ion-item #message{
+    float: left;width: 40%
+}
+
+#bp-contact-detail ion-item #mobile{
+    float: left;width: 60%
+}
+
+#bp-contact-detail ion-item #message p{
+    text-indent: 0;
+    text-align: center;
+}
+
+/*#contacts-detail ion-header-bar button {*/
+/*!*margin-left: 6.5%;*!*/
+/*margin-left: 16px;*/
+/*}*/
+
+#bp-contact-detail ion-header-bar button {
+    color: #fff;
+}
+
+#favoriteBtn {
+    margin-right: 10%;
+    color:black;
+}
+
+#editBtn {
+    margin-left: 10%;
+}
+
+#bp-contact-detail img {
+    position: static;
+    margin-right: 20px;
+    margin-top: 7px;
+    max-width: 59px;
+    max-height: 59px;
+    min-width: 59px;
+    min-height: 59px;
+
+}
+#bp-contact-detail .userInfo{
+    display: inline-block;
+}
+
+
+#bp-contact-detail #message i{
+    display: block;
+    text-align: center;
+}
+
+#detailEdit .list label{
+    border: none;
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+    padding-right: 16px;
+    margin-bottom: 5px;
+}
+
+#detailEdit .list label input{
+    /*width: 95%;*/
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+#detailEdit .list label:nth-of-type(3){
+    margin-top: 10px;
+}
+
+#detailEdit button{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#bp-contact-detail ion-content{
+    padding: 0;
+}
+
+#bp-contact-detail #unDetailEdit #userInfo{
+    width: 82%;
+}
+
+#bp-contact-detail #unDetailEdit #userInfo h3{
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#bp-contact-detail #unDetailEdit #userInfo span:first-child{
+    font-size: 135%;
+}
+
+#bp-contact-detail #unDetailEdit #userInfo p{
+    line-height: 1;
+}
+
+#bp-contact-detail #unDetailEdit #userInfo p:nth-child(2){
+    margin-top: -3px;
+    color: #fff;
+}
+
+/*#bp-contact-detail #unDetailEdit #userInfo p:nth-child(3){*/
+/*margin-top: 5px;*/
+/*}*/
+
+#bp-contact-detail #detailEdit .userInfo h3{
+    font-weight: bold;
+}
+
+#bp-contact-detail #detailEdit .userInfo span:first-child{
+    font-size: 135%;
+}
+
+#bp-contact-detail #detailEdit .userInfo p{
+    line-height: 1;
+}
+
+#bp-contact-detail #detailEdit .userInfo p:nth-child(2){
+    margin-top: -3px;
+    color: #fff;
+}
+
+/*#bp-contact-detail #detailEdit .userInfo p:nth-child(3){*/
+/*margin-top: 5px;*/
+/*}*/
+
+
+
+
+
+#businessPartner .bar-header {
+    display: flex;
+    margin: 0 auto;
+}
+
+#businessPartnerContactList ion-content{
+    position: initial;
+}
+
+#businessPartnerContactList ion-header-bar button:first-child{
+    margin-left: 16px;
+}
+
+#businessPartnerContactList ion-header-bar div.bar-header{
+    margin-left: -32px;
+}
+
+#businessPartnerContactList ion-header-bar div h4{
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#businessPartnerContactList ion-list .contact-item-detail i.contact-icon-selectrole{
+    opacity: 0.7;
+}
+
+#businessPartner ion-content ion-item{
+    padding: 10px;
+}
+
+#businessPartner ion-list ion-item div {
+    width: 80%;
+}
+
+
+#businessPartner ion-list ion-item div p{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#businessPartner ion-content ion-list a i.contact-info{
+    opacity: 0.7;
+    width: 50px;
+    right:3px;
+}
+
+
+/*apple-css*/
+
+#businessPartnerContactList ion-header-bar button.icon-back{
+    /*margin-top: 0;*/
+}
+
+#businessPartnerContactList ion-header-bar div.title{
+    padding: 5px;
+}
+
+#businessPartnerContactList ion-header-bar button.add-button{
+    /*margin-top: 0;*/
+    margin-right: 16px
+}
+
+#businessPartnerContactList ion-content ion-item .contact-item-detail p.contact-item-phone.bpName{
+    display: inline-block;
+}
+
+#bp-contact-detail ion-item #message p a{
+    color: black;
+}
+
+#bp-contact-detail ion-content a#bpContactDetailFax a {
+    color: black
+}

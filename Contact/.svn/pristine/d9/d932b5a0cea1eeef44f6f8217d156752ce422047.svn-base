@@ -1,0 +1,134 @@
+
+
+#businessPartnerDetail .scroll {
+    margin-top: -1px;
+}
+
+#businessPartnerDetail ion-header-bar {
+    background-color: #0167b1;
+}
+
+#businessPartnerDetail .list ion-item {
+    /*width: 90%;*/
+    margin: 0 10px;
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+
+}
+
+#businessPartnerDetail .list ion-item:first-child {
+    margin: 0;
+    width: 100%;
+    background-color: #0167b1;
+    border: none;
+    padding: 16px;
+    display: flex;
+}
+#businessPartnerDetail .list ion-item.contact-detail-with-line{
+    padding: 12px;
+}
+
+#businessPartnerDetail .list ion-item:first-child h3 {
+    color: #fff;
+}
+
+#businessPartnerDetail .list ion-item p {
+    text-indent: 24px;
+}
+
+#businessPartnerDetail .list ion-item:first-child p {
+    color: #6ebced;
+    text-indent: 0;
+}
+
+#businessPartnerDetail ion-header-bar {
+    border: none;
+}
+
+#businessPartnerDetail ion-header-bar button {
+    margin-left: 16px;
+}
+
+#businessPartnerDetail ion-header-bar button {
+    color: #fff;
+}
+
+#businessPartnerDetail img {
+    position: static;
+    margin-right: 20px;
+    max-width: 59px;
+    max-height: 59px;
+    margin-top: 7px;
+    height: 35px;
+    border-radius: 15%;
+
+}
+#businessPartnerDetail #userInfo{
+    width: 82%;
+}
+#businessPartnerDetail #userInfo h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+}
+
+#businessPartnerDetail ion-content {
+    padding: 0;
+}
+
+#businessPartnerDetail ion-item p.pAddress{
+    word-break: normal;
+    margin-left: 24px;
+    text-indent: 0px;
+    white-space: normal
+}
+
+#bpContactLibrary ion-header-bar{
+    background-color: #0067b1
+}
+
+#bpContactLibrary ion-header-bar h2{
+    color: #ffffff;
+}
+
+#bpContactLibrary ion-content div.scroll{
+    height: 100%;
+}
+
+#addBusinessPartnerContact ion-header-bar button{
+    margin-left: 16px;
+}
+
+.showBy-box{    width: 200px;
+    height: 300px;
+    right: 5px;
+    top: 25px;
+    left: auto;}
+.showBy-box .popup{height: 100%}
+.showBy-box .popup{border-radius: 10px; overflow: hidden;}
+.popup-container .popup{background-color: #fff}
+.country-box{
+    width: 100%;
+    height: 100%;
+    right: auto;
+    top: auto;
+    left: auto;
+}
+.country-box .popup{width: 80%;height: 80%;}
+
+
+#businessPartnerMap ion-header-bar {
+    background-color: #0167b1;
+}
+
+#businessPartnerMap ion-header-bar button {
+    margin-left: 16px;
+}
+
+/* aplle css*/
+
+
+#businessPartnerDetail ion-content a#bpDetailFax a{
+    color:black;
+}

@@ -1,0 +1,58 @@
+<ion-view id="projectsdetail" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center">
+        <button  ng-click="$ionicGoBack()"
+                 class=" button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+
+        <!--<div class="title">-->
+            <!--<h4 class="projectDetailTitle" >-->
+                <!--{{projectName}}-->
+            <!--</h4>-->
+        <!--</div>-->
+    </ion-header-bar>
+
+    <ion-content >
+        <ion-list>
+            <ion-item class="item-remove-animate contact-detail-without-line" type="item-text-wrap">
+                    <!--<p>{{selectCompamy}}</p>-->
+                <p>{{projectName}}</p>
+            </ion-item>
+            <div class="headerLine"></div>
+
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="projectDetailData.telephone">
+                <i class="contact-icon-telephone"> {{translate.projectDetail.Telephone}}</i>
+                <p><a href="tel:{{projectDetailData.telephone}}">{{projectDetailData.telephone}}</a></p>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="projectDetailData.mobile">
+                <i class="contact-icon-mobile"> {{translate.projectDetail.mobile}}</i>
+                <p><a href="tel:{{projectDetailData.mobile}}">{{projectDetailData.mobile}}</a></p>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="projectDetailData.telefax">
+                <i class="contact-icon-fax"> {{translate.projectDetail.telefax}}</i>
+                <p><a ng-click="return null" id="projectFax">{{projectDetailData.telefax}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap"  data-ng-show="projectDetailData.address.addressLine" ng-click="skipMap(projectDetailData.address)">
+                <i class="contact-icon-address "> {{translate.projectDetail.address}}</i>
+                <p class="pAddress">{{projectDetailData.address.addressLine}}</p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="projectDetailData.bpName1">
+                <i class="contact-icon-bp"> {{translate.projectDetail.Customer}}</i>
+                <p>{{projectDetailData.bpName1}}</p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactName"  href="#/desktop/projectusermessage/{{projectDetailData.contactFk}}/{{projectDetailData.bpName1}}">
+                <i class="contact-icon-contact"> {{translate.projectDetail.CustomerContact}}</i>
+                <!--<p>{{contactName}}-{{projectDetailData.contactRoleDescription}}</p>-->
+                <p>{{contactName}}</p>
+            </ion-item>
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="projectDetailData.contactRoleDescription">-->
+                <!--<i class="contact-icon-selectrole"> {{translate.projectDetail.ContactRole}}</i>-->
+                <!--<p>{{projectDetailData.contactRoleDescription}}</p>-->
+            <!--</ion-item>-->
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

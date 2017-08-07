@@ -1,0 +1,55 @@
+{
+  "login": {
+    "loginLanguage": "语言",
+    "loginLanguageEnglish": "English",
+    "loginLanguageEnglishUS": "English(us)",
+    "loginLanguageGerman": "Deutsch",
+    "loginLanguageGermanDE": "Deutsch(de)",
+    "loginLanguageSpanish": " Spanish",
+    "loginLanguageChinese": "中文",
+    "loginPassword": "密码",
+    "loginUsername": "用户名",
+    "remember": "记住",
+    "loginEnterPassword": "输入密码",
+    "loginEnterUsername": "输入用户名",
+    "loginButton": "登录",
+    "loginBusyMessage": "正在登录... 请稍候!",
+    "loginFailedMessage": "登录失败! 请重试...",
+    "loginSuccessfulMessage": "登录成功! 正在继续装载,请稍候 ...",
+    "appName":"通讯录",
+    "loginOut": "退出",
+    "settings": "设置",
+    "serverConfig": "配置服务",
+    "continue": "继续"
+  },
+  "userInfo": {
+    "loginName": "登录名",
+    "loginAddress": "邮箱",
+    "loginPassword": "密码",
+    "change": "更改",
+    "password": {
+      "oldPassword": "旧密码",
+      "newPassword": "新密码",
+      "conPassword": "确认密码",
+      "save": "保存",
+      "cancel": "取消"
+    },
+    "photo": {
+      "title":"修改头像",
+      "cancel":"取消",
+      "take":"拍照",
+      "choose":"从手机相册选择",
+      "phoneGapOnly":"你的设备不支持摄像功能",
+      "uploadFail":"上传失败"
+    },
+    "feedBackMessage": {
+      "unValidConPassword": "确认密码有误",
+      "unValidOldPassword": "旧密码错误",
+      "title": "更新密码提示",
+      "successMessage": "更改密码成功"
+    },
+    "language":{
+      "changLanguage": "语言"
+    }
+  }
+}

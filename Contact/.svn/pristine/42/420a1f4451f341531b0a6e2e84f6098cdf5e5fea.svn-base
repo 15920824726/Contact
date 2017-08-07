@@ -1,0 +1,32 @@
+<ion-view id="bpContactLibrary">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset">
+        <button  ng-click="closeLocalContact()"
+                class="button buttons ion-chevron-left button-clear header-item ion-close"></button>
+        <h2 class="title">
+            {{translate.businessPartner.contactLibraryTitle}}
+        </h2>
+    </ion-header-bar>
+    <ion-content overflow-scroll="true" style="overflow: hidden">
+        <div style="height: 80%;overflow: hidden" id="bpLibraryList">
+            <!--<ion-scroll >-->
+                <ion-list id="addContact" >
+                    <ion-item class="item-remove-animate contact-item" ng-repeat="contact in localContactList"
+                              nav-transition
+                              type="item-text-wrap">
+
+                        <ion-checkbox data-ng-click="selectLocalContact(contact.id,contact.checked)" ng-model="contact.checked">
+                            <div class="contact-item-img" >
+                                <p class="contactName">{{contact.giveName}}</p>
+                            </div>
+                        </ion-checkbox>
+                    </ion-item>
+                </ion-list>
+            <!--</ion-scroll>-->
+        </div>
+
+        <button style="position: absolute;bottom: 0;width: 100%;" class="button button-full button-positive "
+            data-ng-click="update()">Update
+        </button>
+
+    </ion-content>
+</ion-view>

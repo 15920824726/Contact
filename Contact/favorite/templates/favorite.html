@@ -1,0 +1,36 @@
+
+<ion-view id="favoritelist"  >
+    <ion-header-bar class="bar bar-header item-input-inset">
+
+        <button data-ng-click="goToSettting()"
+                 class="button buttons button-clear header-item setting">
+            <i class="contact-icon-seting"></i>
+        </button>
+
+    </ion-header-bar>
+
+    <ion-content class="hasData" padding="true"  data-ng-show="isShow" >
+      <ion-list>
+          <ion-item   class="item-remove-animate contact-item item-icon-right "
+                     ng-repeat="item in favoriteContactsData" data-ng-if="favoriteContactsData">
+              <div  class="contact-item-img">
+                    <img data-ng-src="{{item.ImageData}}" >
+              </div>
+              <div  class="secondblock" ng-click="skipDetail(item)">
+                  <p>{{item.FirstName}} {{item.FamilyName}}</p>
+                  <p><i class="contact-icon-company"> </i> {{item.BpName}} </p>
+              </div>
+
+              <ion-option-button ng-click="myDelete(item)"  style="background-color:darkgrey" >
+                 <p><i class="contact-icon-delete"></i></p>
+                 <p>{{delete}}</p>
+              </ion-option-button>
+          </ion-item>
+      </ion-list>
+        <!--<p  data-ng-show="!isShow">No Data</p>-->
+    </ion-content>
+    <ion-content class="noData" data-ng-show="!isShow">
+        <p>{{translate.favorite.noData}}</p>
+    </ion-content>
+</ion-view>
+

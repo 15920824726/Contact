@@ -1,0 +1,48 @@
+<ion-view id="settingConfig" can-swipe-back="false">
+    <ion-header-bar class="bar-header bar-light bar-blue-text">
+        <button ng-click="goBack()"
+            class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+        <h1 class="title" >{{translate.setting.title}}</h1>
+    </ion-header-bar>
+
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap" >
+                <img data-ng-src="{{image}}">
+                <div>
+                    <h3 style="    font-weight: bold;color: #fff">
+                        {{username}}
+                    </h3>
+                    <p style="color: #fff">
+                        {{companyrole}}
+                    </p>
+                </div>
+            </ion-item>
+            <ion-item data-ng-click="commonSelectCompany()">
+                <span><i class="contact-icon-selectcompany"></i></span>
+                <span>{{company}}</span>
+                <span><i class="contact-icon-next"></i> </span>
+            </ion-item>
+            <ion-item data-ng-click="languagemodal.show()">
+                <span><i class="contact-icon-language"></i></span>
+                <span>{{currentLanguage}}</span>
+                <span><i class="contact-icon-next"></i> </span>
+            </ion-item>
+            <ion-item data-ng-click="goToServer()">
+                <span><i class="contact-icon-server"></i></span>
+                <span>{{translate.setting.server}}</span>
+                <span><i class="contact-icon-next" ></i> </span>
+            </ion-item>
+            <ion-item data-ng-click="aboutmodal.show()">
+                <span><i class="contact-icon-info"></i></span>
+                <span>{{translate.setting.about}}</span>
+                <span><i class="contact-icon-next" ></i> </span>
+            </ion-item>
+
+        </ion-list>
+        <button type="button"
+                ng-click="logOut()">{{translate.setting.logOut}}
+        </button>
+
+    </ion-content>
+</ion-view>

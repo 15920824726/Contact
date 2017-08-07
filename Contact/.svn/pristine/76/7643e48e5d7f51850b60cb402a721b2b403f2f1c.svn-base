@@ -1,0 +1,80 @@
+/*.login .login-bg{*/
+
+/*}*/
+
+/*.login .login-bg label{*/
+/*border: none;*/
+/*background-color: #e9e9e9;*/
+/*}*/
+
+.login .login-main {
+    text-align: center;
+}
+
+.login .login-main img{
+    max-width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+}
+
+.login .login-main .list {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.login .login-main .list label{
+    margin-top: 10px;
+}
+
+.login .login-main .list .item-checkbox {
+    background-color: #e9e9e9;
+    border: none;
+}
+
+.login .login-main .select-language {
+    background-color: #e9e9e9;
+    display: inline-block;
+    padding:0 14px;
+    width: 100%;
+    border:0;
+}
+
+.login .login-main .select-language span {
+    display: block;
+    width: 100%;
+}
+
+.login .login-main .select-language select {
+    width: 100%;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.login .loginUsername, .login .loginPassword {
+    padding:0 14px;
+    border: none;
+}
+
+.login .loginUsername input, .login .loginPassword input {
+    border: 1px #b1b1b1 solid;
+    border-radius: 5px;
+    padding: 0 10px !important;
+    background-color: #fff;
+}
+
+.login .login-btn{
+    border-radius: 5px;
+}
+.login .login-main label span i{
+    margin: 0 5px;
+}
+
+.login .tips{
+    color: #d80001;
+}
+@media (max-width: 680px) {
+    .login .login-main img {
+        width: 100%;
+    }
+}

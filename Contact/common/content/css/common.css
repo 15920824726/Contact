@@ -1,0 +1,608 @@
+/* Empty. Add your own CSS if you like */
+/* fixed back action */
+[nav-view-transition="ios"][nav-view-direction="back"] [nav-view="entering"]{
+    z-index: 4;
+}
+.reset-barHeight{height: 44px!important;top:0px!important;}
+.tabs{background-image:none!important;}
+.scroll-view.scroll-y, .scroll-view.scroll-xy, .scroll-view.scroll-x {
+    overflow: hidden
+}
+.button.button-positive{background-color: #0067b1}
+.button.button-disable {background-color: #ccc;}
+body.with-statusbar-overlay {
+    padding-top: 20px;
+}
+
+body.with-statusbar-overlay .statusbar-overlay {
+    display: block;
+}
+
+body.with-statusbar-overlay .loading-page {
+    top: 0px;
+}
+
+body.with-statusbar-overlay .modal-backdrop, .modal-backdrop-bg {
+    top: 20px;
+}
+.statusbar-overlay {
+    background: #0067b1;
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 100%;
+    display: none;
+    -webkit-transition-duration: 400ms;
+    transition-duration: 400ms;
+}
+.networkTips {
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    min-height: 40px;
+    text-align: center;
+    background: #F26C63;
+    color: white;
+    z-index: 999999;
+    display: none;
+}
+@font-face {
+    font-family: 'itwo';
+    src: url('../fonts/itwo.eot?dyxxmw');
+    src: url('../fonts/itwo.eot?dyxxmw#iefix') format('embedded-opentype'),
+    url('../fonts/itwo.ttf?dyxxmw') format('truetype'),
+    url('../fonts/itwo.woff?dyxxmw') format('woff'),
+    url('../fonts/itwo.svg?dyxxmw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.not-link {pointer-events: none;}
+[class^="itwo-icon-"], [class*=" itwo-icon-"], [class^="itwo-icon-"]:before, [class*=" itwo-icon-"]:before,
+.tab-tree .tab-title:before {
+    vertical-align: top;
+    /*pointer-events: none;*/
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'itwo' !important;
+    /*speak: none;*/
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.itwo-icon-ribinternation:before {
+    content: "\e94e";
+}
+
+.itwo-icon-tool:before {
+    content: "\e94f";
+}
+
+.itwo-icon-eraser:before {
+    content: "\e950";
+}
+
+.itwo-icon-CNY:before {
+    content: "\e900";
+}
+
+.itwo-icon-EUR:before {
+    content: "\e901";
+}
+
+.itwo-icon-HKD:before {
+    content: "\e902";
+}
+
+.itwo-icon-USD:before {
+    content: "\e903";
+}
+
+.itwo-icon-reporticon:before {
+    content: "\e948";
+}
+
+.itwo-icon-icon:before {
+    content: "\e949";
+}
+
+.itwo-icon-cr-ek:before {
+    content: "\e935";
+}
+
+.itwo-icon-cr-sk:before {
+    content: "\e936";
+}
+
+.itwo-icon-cr-ok:before {
+    content: "\e937";
+}
+
+.itwo-icon-cr-report:before {
+    content: "\e938";
+}
+
+.itwo-icon-cr-axes:before {
+    content: "\e939";
+}
+
+.itwo-icon-cr-back:before {
+    content: "\e93a";
+}
+
+.itwo-icon-cr-case:before {
+    content: "\e93b";
+}
+
+.itwo-icon-cr-doc1:before {
+    content: "\e93c";
+}
+
+.itwo-icon-cr-doc2:before {
+    content: "\e93d";
+}
+
+.itwo-icon-cr-doc3:before {
+    content: "\e93e";
+}
+
+.itwo-icon-cr-doc4:before {
+    content: "\e93f";
+}
+
+.itwo-icon-cr-email:before {
+    content: "\e940";
+}
+
+.itwo-icon-cr-FP:before {
+    content: "\e941";
+}
+
+.itwo-icon-cr-go:before {
+    content: "\e942";
+}
+
+.itwo-icon-cr-home:before {
+    content: "\e943";
+}
+
+.itwo-icon-cr-period:before {
+    content: "\e944";
+}
+
+.itwo-icon-cr-region:before {
+    content: "\e945";
+}
+
+.itwo-icon-cr-s:before {
+    content: "\e946";
+}
+
+.itwo-icon-cr-value:before {
+    content: "\e947";
+}
+
+.itwo-icon-controlunit2:before {
+    content: "\e933";
+}
+
+.itwo-icon-subcontraction2:before {
+    content: "\e934";
+}
+
+.itwo-icon-boq2:before {
+    content: "\e931";
+}
+
+.itwo-icon-dashboard2:before {
+    content: "\e94c";
+}
+
+.itwo-icon-deviation:before {
+    content: "\e94b";
+}
+
+.itwo-icon-enddate:before {
+    content: "\e92d";
+}
+
+.itwo-icon-pdfsize:before {
+    content: "\e92e";
+}
+
+.itwo-icon-resourcecurve:before {
+    content: "\e92f";
+}
+
+.itwo-icon-startdate:before {
+    content: "\e930";
+}
+
+.itwo-icon-controltowerbiv:before {
+    content: "\e927";
+}
+
+.itwo-icon-penciloff:before {
+    content: "\e928";
+}
+
+.itwo-icon-port84:before {
+    content: "\e929";
+}
+
+.itwo-icon-server:before {
+    content: "\e92a";
+}
+
+.itwo-icon-usenamehot:before {
+    content: "\e92b";
+}
+
+.itwo-icon-add:before {
+    content: "\e925";
+}
+
+.itwo-icon-costcode:before {
+    content: "\e926";
+}
+
+.itwo-icon-back:before {
+    content: "\e904";
+}
+
+.itwo-icon-boq:before {
+    content: "\e94d";
+}
+
+.itwo-icon-brush:before {
+    content: "\e94a";
+}
+
+.itwo-icon-category:before {
+    content: "\e932";
+}
+
+.itwo-icon-category2:before {
+    content: "\e92c";
+}
+
+.itwo-icon-cline-1:before {
+    content: "\e905";
+}
+
+.itwo-icon-cline2:before {
+    content: "\e906";
+}
+
+.itwo-icon-complete:before {
+    content: "\e907";
+}
+
+.itwo-icon-controlunit:before {
+    content: "\e908";
+}
+
+.itwo-icon-costoutlook:before {
+    content: "\e909";
+}
+
+.itwo-icon-cut:before {
+    content: "\e90a";
+}
+
+.itwo-icon-dashboard:before {
+    content: "\e90b";
+}
+
+.itwo-icon-folder:before {
+    content: "\e90c";
+}
+
+.itwo-icon-home:before {
+    content: "\e90d";
+}
+
+.itwo-icon-instructions:before {
+    content: "\e90e";
+}
+
+.itwo-icon-magnifyingglass:before {
+    content: "\e90f";
+}
+
+.itwo-icon-manage:before {
+    content: "\e910";
+}
+
+.itwo-icon-manage2:before {
+    content: "\e911";
+}
+
+.itwo-icon-next:before {
+    content: "\e912";
+}
+
+.itwo-icon-password:before {
+    content: "\e913";
+}
+
+.itwo-icon-pdf:before {
+    content: "\e914";
+}
+
+.itwo-icon-pencil:before {
+    content: "\e915";
+}
+
+.itwo-icon-period:before {
+    content: "\e916";
+}
+
+.itwo-icon-project:before {
+    content: "\e917";
+}
+
+.itwo-icon-project2:before {
+    content: "\e918";
+}
+
+.itwo-icon-set:before {
+    content: "\e919";
+}
+
+.itwo-icon-status:before {
+    content: "\e91a";
+}
+
+.itwo-icon-status2:before {
+    content: "\e91b";
+}
+
+.itwo-icon-subcontraction:before {
+    content: "\e91c";
+}
+
+.itwo-icon-timeline:before {
+    content: "\e91d";
+}
+
+.itwo-icon-type:before {
+    content: "\e91e";
+}
+
+.itwo-icon-type2:before {
+    content: "\e91f";
+}
+
+.itwo-icon-usename:before {
+    content: "\e920";
+}
+
+.itwo-icon-version:before {
+    content: "\e921";
+}
+
+.itwo-icon-video:before {
+    content: "\e922";
+}
+
+.itwo-icon-view:before {
+    content: "\e923";
+}
+
+.itwo-icon-view2:before {
+    content: "\e924";
+}
+.plugin-nodata {
+    position: absolute;
+    bottom: 0;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'contact';
+    src:  url('../fonts/contact.eot?yf1gy7');
+    src:  url('../fonts/contact.eot?yf1gy7#iefix') format('embedded-opentype'),
+    url('../fonts/contact.ttf?yf1gy7') format('truetype'),
+    url('../fonts/contact.woff?yf1gy7') format('woff'),
+    url('../fonts/contact.svg?yf1gy7#contact') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="contact-icon-"], [class*=" contact-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'contact' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-icon-address:before {
+    content: "\e901";
+}
+.contact-icon-back:before {
+    content: "\e902";
+}
+.contact-icon-bp:before {
+    content: "\e903";
+}
+.contact-icon-businesspatner:before {
+    content: "\e904";
+}
+.contact-icon-company1:before {
+    content: "\e905";
+}
+.contact-icon-contact:before {
+    content: "\e906";
+}
+.contact-icon-delete:before {
+    content: "\e907";
+}
+.contact-icon-edit:before {
+    content: "\e908";
+}
+.contact-icon-email:before {
+    content: "\e909";
+}
+.contact-icon-favorite:before {
+    content: "\e90a";
+}
+.contact-icon-fax:before {
+    content: "\e90b";
+}
+.contact-icon-group:before {
+    content: "\e90c";
+}
+.contact-icon-info:before {
+    content: "\e90d";
+}
+.contact-icon-language:before {
+    content: "\e91b";
+}
+.contact-icon-map:before {
+    content: "\e90e";
+}
+.contact-icon-message:before {
+    content: "\e90f";
+}
+.contact-icon-mobile:before {
+    content: "\e910";
+}
+.contact-icon-name2:before {
+    content: "\e911";
+}
+.contact-icon-password:before {
+    content: "\e912";
+}
+.contact-icon-Profitcenter:before {
+    content: "\e913";
+}
+.contact-icon-project:before {
+    content: "\e914";
+}
+.contact-icon-selectcompany:before {
+    content: "\e915";
+}
+.contact-icon-selectrole:before {
+    content: "\e916";
+}
+.contact-icon-serch:before {
+    content: "\e917";
+}
+.contact-icon-server:before {
+    content: "\e918";
+}
+.contact-icon-seting:before {
+    content: "\e919";
+}
+.contact-icon-telephone:before {
+    content: "\e91a";
+}
+.contact-icon-usename:before {
+    content: "\e91d";
+}
+.contact-icon-web:before {
+    content: "\e91c";
+}
+.contact-icon-company:before {
+    content: "\e900";
+}
+
+
+/* set background */
+::selection {
+    background-color: transparent
+}
+
+::-moz-selection {
+    background-color: transparent
+}
+
+::-webkit-selection {
+    background-color: transparent
+}
+
+a{
+    text-decoration: none;
+}
+
+ion-header-bar .setting{
+    position: absolute;
+    right: 16px;
+    margin-top: -3px;
+}
+
+ion-header-bar a,ion-header-bar button{
+    color: #fff !important;
+}
+
+.headerLine{
+    background-color: #e7eef4;
+    width: 100%;
+    height: 10px;
+}
+
+ion-header-bar .ion-left{
+    margin-left: 16px;
+}
+
+ion-header-bar .ion-right{
+    position: absolute;
+    right: 16px;
+}
+
+.contact-icon-seting{
+    font-size: 22px;
+}
+.contact-icon-search{font-size: 22px}
+.service-config{
+    color: #676767;
+    border: 1px solid #b1b1b1;
+    width: auto;
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+.search-input{border:none;border-radius: 5px}
+.tab-item .icon{line-height: 32px;font-size:26px;}
+.tabs{
+    box-shadow: 1px -5px 15px #c0d3e4;border-color: #fff;
+    background-color: #fff;
+}
+

@@ -1,0 +1,9 @@
+{
+  "base": {
+    "NotNetWork": "Netzwerk-Verbindung ist nicht verfügbar"
+  },
+  "main": {
+    "appName": "Contact"
+  }
+}
+

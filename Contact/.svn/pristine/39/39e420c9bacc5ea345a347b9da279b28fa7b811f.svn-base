@@ -1,0 +1,28 @@
+<ion-modal-view id="aboutsetting">
+    <ion-header-bar class="bar-header bar-light bar-blue-text" style="background-color: #0167b1;border: none">
+        <button ng-click="aboutmodal.hide()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+        <h1 class="title" style="color: #fff">{{translate.about.title}}</h1>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="about" >
+
+            <div >
+                <img src="setting/content/img/logo.png">
+            </div>
+
+            <div >
+                <p><span data-ng-bind="translate.about.company"></span><span class="value">RIB Software SE</span></p>
+                <p></p>
+                <p><span data-ng-bind="translate.about.version"></span><span class="value">1.0.0</span></span></p>
+            </div>
+            <div >
+                <p>©️2017 RIB Software SE</p>
+                <p>info@rib-software.com</p>
+            </div>
+        </div>
+
+    </ion-content>
+
+</ion-modal-view>

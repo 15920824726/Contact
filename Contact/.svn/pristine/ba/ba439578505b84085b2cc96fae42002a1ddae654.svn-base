@@ -1,0 +1,15 @@
+<div class="report-filter-footer">
+    <a class="report-icon" data-ng-if="hasUserInfo" data-ng-click="goToUserInfo()"><i
+            class="icon itwo-icon-cr-s"></i>
+    </a>
+    <platform-screen-shot></platform-screen-shot>
+    <a class="report-icon" data-ng-if="hasAxes" data-ng-click="switchAxes()">
+        <i class="icon itwo-icon-icon"></i>
+    </a>
+    <a class="report-icon" data-ng-if="hasReport" data-ng-click="reselectDocument()">
+        <i class="icon itwo-icon-reporticon"></i>
+    </a>
+    <a class="report-icon" data-ng-if="hasHome" data-ng-click="goHome()">
+        <i class="icon itwo-icon-cr-home"></i>
+    </a>
+</div>

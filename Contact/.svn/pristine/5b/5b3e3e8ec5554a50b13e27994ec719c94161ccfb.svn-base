@@ -1,0 +1,132 @@
+
+#favoritedetail ion-header-bar{
+    border: none;
+    background-color: #0167b1
+}
+
+#favoritedetail ion-content{
+    padding: 0;
+}
+
+#favoritedetail ion-content div.scroll{
+    margin-top: -1px;
+}
+
+#favoritedetail .list ion-item {
+    /*width: 90%;*/
+    margin: 0 10px;
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+
+}
+
+#favoritedetail ion-item:first-child{
+    margin: 0;
+    width: 100%;
+    background-color: #0167b1;
+    border: none;
+    padding: 16px;
+    display: flex;
+}
+
+#favoritedetail ion-item.contact-detail-with-line{
+    padding: 12px;
+}
+
+#favoritedetail ion-list .item-remove-animate{
+    background-color: #0167b1
+}
+
+#favoritedetail ion-item img{
+    position: static;
+    margin-right: 20px;
+    margin-top: 7px;
+    max-width: 59px;
+    max-height: 59px;
+    min-width: 59px;
+    min-height: 59px;
+}
+
+#favoritedetail .hasData ion-item:first-child h3 {
+    color: #fff;
+}
+
+#favoritedetail .list ion-item p {
+    text-indent: 24px;
+}
+
+#favoritedetail .list ion-item:first-child p {
+    color: #6ebced;
+    text-indent: 0;
+}
+
+#favoritedetail #userInfo{
+    width: 82%;
+}
+
+#favoritedetail #userInfo h3{
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+#favoritedetail #userInfo h3 span{
+    font-size: 135%;
+}
+
+#favoritedetail #userInfo p{
+    line-height: 1;
+}
+
+#favoritedetail #userInfo p:nth-child(2){
+    margin-top: -3px;
+    color: #fff;
+}
+
+
+#favoritedetail ion-item div .firstheadblock{
+    font-weight: bold;color: #fff
+}
+
+#favoritedetail ion-item div .secondheadblock{
+    color:darkgray
+}
+
+/*#favoritedetail ion-item+ion-item p{*/
+/*margin-left: 23px;*/
+/*}*/
+
+#favoritedetail ion-item .firstmobileblock {
+    width: 60%;float: left
+}
+
+#favoritedetail ion-item .secondmobileblock{
+    float: left;width: 40%
+}
+
+#favoritedetail ion-item  .secondmobileblock p{
+    text-indent: 0;
+    text-align: center;
+}
+
+
+#favoritedetail ion-content.noData{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#favoritedetail ion-content.noData p{
+    font-size: x-large;
+    color: darkgray;
+}
+
+/*apple css*/
+#favoritedetail ion-item  .secondmobileblock p a{
+    color: black;
+}
+
+#favoritedetail ion-content a#favoriteFax a{
+    color: black
+}

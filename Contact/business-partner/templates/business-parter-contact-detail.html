@@ -1,0 +1,139 @@
+<ion-view id="bp-contact-detail" hide-nav-bar="true" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center" style="background-color:#0167b1">
+        <!--<button  ng-click="$ionicGoBack()"-->
+        <!--class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left"></button>-->
+        <button data-ng-if="!detailEdit" ng-click="backBPContactList()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left"></button>
+        <button data-ng-if="detailEdit" ng-click="closeEdit()"
+                class="button back-button buttons ion-chevron-left  button-clear header-item ion-left"></button>
+    </ion-header-bar>
+    <ion-content class="padding iContent" overflow-scroll="false">
+
+        <ion-list data-ng-show="!detailEdit" id="unDetailEdit">
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+                <img ng-src="{{contact.imageData}}">
+                <div id="userInfo">
+                    <h3 >
+                        <span >{{contact.basicInfo.firstName}} {{contact.basicInfo.familyName}} </span>
+                    </h3>
+                    <p >{{contact.basicInfo.contactRoleDescription}}</p>
+                    <p style="font-size:small">{{bpname}}</p>
+                    <p style="font-size: small">{{contact.basicInfo.subsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone.telephone">
+                <i class="contact-icon-telephone"> {{translate.businessPartner.Telephone}}</i>
+
+                <p><a href="tel:{{contact.telephone.telephone}}">{{contact.telephone.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone2.telephone">
+                <i class="contact-icon-telephone"> {{translate.businessPartner.OtherTelephone}}</i>
+                <p><a href="tel:{{contact.telephone2.telephone}}">{{contact.telephone2.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line item"
+                      type="item-text-wrap" data-ng-show="contact.mobile.phoneNumber">
+                <div id="mobile" >
+                    <i class="contact-icon-mobile "> {{translate.businessPartner.Mobile}}</i>
+                    <!--<p><a href="tel:{{contact.MobilePattern}}">{{contact.mobile.phoneNumber}}</a></p>-->
+                    <p><a href="tel:{{contact.mobile.pattern}}">{{contact.mobile.phoneNumber}}</a></p>
+                </div>
+                <div id="message"  >
+                    <i class="contact-icon-message"></i>
+                    <p><a href="sms:{{contact.mobile.pattern}}">{{translate.businessPartner.message}}</a></p>
+                </div>
+
+
+            </ion-item>
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.teleFax.telephone">
+                <i class="contact-icon-fax "> {{translate.businessPartner.Fax}}</i>
+                <p><a ng-click="return null" id="bpContactDetailFax">{{contact.teleFax.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.basicInfo.email">
+                <i class="contact-icon-email "> {{translate.businessPartner.Email}}</i>
+                <p><a href="mailto:{{contact.basicInfo.email}}">{{contact.basicInfo.email}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" style="text-align: center">
+                <button id="favoriteBtn" ng-click="favorite(contact)"
+                        class="button back-button buttons  button-clear header-item">
+                    <i class="contact-icon-favorite"></i>
+                    <span>{{translate.businessPartner.Favorite}}</span>
+                </button>
+                <button id="editBtn" ng-click="edit()"
+                        class="button back-button buttons  button-clear header-item">
+                    <i class="contact-icon-edit"></i>
+                    <span> {{translate.businessPartner.Edit}}</span>
+                </button>
+            </ion-item>
+
+        </ion-list>
+
+        <ion-list data-ng-show="detailEdit" id="detailEdit">
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+                <img ng-src="{{contact.imageData}}" data-on-tap="choose()" >
+
+                <div class="userInfo">
+                    <h3 >
+                        <span >{{contact.basicInfo.firstName}} {{contact.basicInfo.familyName}} </span>
+                    </h3>
+                    <p >{{contact.basicInfo.contactRoleDescription}}</p>
+                    <p style="font-size: small">{{bpname}}</p>
+                    <p style="font-size: small">{{contact.basicInfo.subsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+            <form name="userInfoForm" novalidate>
+                <div class="list">
+                    <label class="item item-input item-floating-label">
+                        <span>{{translate.businessPartner.FirstName}}</span>
+                        <input type="text" placeholder="First Name" data-ng-model="contact.basicInfo.firstName">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span>{{translate.businessPartner.FamilyName}}</span>
+                        <input type="text" placeholder="Family Name" data-ng-model="contact.basicInfo.familyName">
+                    </label>
+                    <label class="item item-input item-floating-label not-bottom-padding" style="position: relative" data-ng-click="addPhone($event)" >
+                        <span><i class="contact-icon-telephone"></i>{{translate.businessPartner.Telephone}}</span>
+                        <button  data-ng-if="!status.telephone2" class="add-telephone" >{{translate.businessPartner.Add}}</button>
+                    </label>
+                    <label class="item item-input item-floating-label" style="padding-top: 0;"  >
+                        <input type="text" placeholder="Telephone" data-ng-model="contact.telephone.telephone">
+                    </label>
+
+                    <label class="item item-input item-floating-label" data-ng-if="status.telephone2">
+                        <span><i class="contact-icon-telephone"></i>{{translate.businessPartner.Telephone}}2</span>
+                        <input type="text" placeholder="Telephone" data-ng-model="contact.telephone2.telephone">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-mobile"></i>{{translate.businessPartner.MobilePhone}}</span>
+                        <input type="text" placeholder="Mobild Phone" data-ng-model="contact.mobile.phoneNumber">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-fax"></i>{{translate.businessPartner.Fax}}</span>
+                        <input type="text" placeholder="Fax" data-ng-model="contact.teleFax.telephone">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-email"></i>{{translate.businessPartner.Email}}</span>
+                        <input type="text" placeholder="Fax" data-ng-model="contact.basicInfo.email">
+                    </label>
+                    <label class="item">
+                        <button class="button button-full button-positive" style="width: 100%"
+                                data-ng-click="update(userInfoForm)">{{translate.businessPartner.Update}}
+                        </button>
+                    </label>
+                </div>
+
+            </form>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+

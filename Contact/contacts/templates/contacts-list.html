@@ -1,0 +1,36 @@
+<ion-view id="contacts-list">
+    <ion-header-bar class="bar-header bar item-input-inset" >
+        <button  data-ng-click="goToSettting()"
+                 class="button buttons button-clear header-item setting">
+            <i class="contact-icon-seting"></i>
+        </button>
+    </ion-header-bar>
+    <div class="list list-inset">
+        <div class="item item-input search-input">
+            <i class="placeholder-icon contact-icon-search"></i>
+            <!--<input type="text" ng-model="options.Pattern" ng-change="search()" placeholder="to search..." ng-model-options="{debounce:1000}">-->
+            <input type="text" ng-model="newOptions.FilterRequest.Pattern" ng-change="search()" placeholder="{{translate.contactDetail.toSearch}}" ng-model-options="{debounce:1000}">
+            <a class="ion-close-circled" ng-click="skipCancel()"></a>
+        </div>
+    </div>
+    <ion-content class="iContent" padding="true" overflow-scroll="false">
+        <ion-list data-ng-if='hascontact'>
+            <ion-item class="item-remove-animate contact-item item-icon-right " ng-repeat="contact in contacts"
+                      nav-transition
+                      type="item-text-wrap" href="#/desktop/contact/{{contact.id}}/{{contact.bpName1}}" on-filter-render-filter>
+                <div class="contact-item-img" >
+                    <div class="contact-item-detail">
+                        <p class="contact-item-name ctParrent" data-ng-show="!contact.ownDefine.state" style="font-weight:bold ">{{contact.firstName}} {{contact.familyName}}</p>
+                        <i class="contact-icon-company " data-ng-show="!contact.ownDefine.state"></i>
+                        <p class="contact-item-phone bpName ctParrent" data-ng-show="!contact.ownDefine.state" style="font-size: small;">{{contact.bpName1}}</p>
+                        <p class="contact-item-name " data-ng-show="contact.ownDefine.state" style="font-weight:bold ">{{contact.firstName}} {{contact.familyName}}</p>
+                        <p class="contactParrnt" data-ng-show="contact.ownDefine.state" style="font-size: small;">{{contact.ownDefine.value}}</p>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+        <p id="nodatap" data-ng-if="!hascontact" style="position: absolute;top:50%;width: 100%;text-align: center;font-size: x-large;color: rgb(169,169,169)">{{translate.contactDetail.NoMatchesFound}}</p>
+        <ion-infinite-scroll on-infinite="loadMore()" data-ng-if="moreContact" immediate-check="false"
+                             distance="10%" ></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

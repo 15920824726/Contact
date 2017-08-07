@@ -1,0 +1,43 @@
+<ion-view id="projectContact" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header  item-input-inset" >
+        <button  ng-click="$ionicGoBack()"
+                class="  buttons contact-icon-back button-clear header-item icon-back"></button>
+        <div class="title" >
+            <h4 class="projectContactTitle" >
+               {{projectContactName}}
+            </h4>
+        </div>
+    </ion-header-bar>
+    <div class="list list-inset " >
+        <div class="item item-input search-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="text" ng-model="options"  placeholder="to search..." ng-model-options="{debounce:500}">
+            <a class="ion-close-circled" ng-click="skipCancel()"></a>
+        </div>
+    </div>
+
+        <ion-content  padding="true"  overflow-scroll="false" class="contactproject">
+            <ion-list data-ng-if="projectContactsData">
+            <ion-item class="item-remove-animate contact-item item-icon-right " ng-repeat="pjcontact in projectContactsData |filter:myfunc "
+                      nav-transition
+                      type="item-text-wrap" >
+                   <!--  <div  class="contact-item-img firstblock " data-ng-if="pjcontact.imageData">
+                        <img data-ng-src="{{pjcontact.imageData}}" >
+                    </div> -->
+                    <div  class="contact-item-detail secondblock">
+                        <p >{{pjcontact.firstName}} {{pjcontact.familyName}}</p>
+
+                        <p>   <i class="contact-icon-selectrole"  > </i>{{pjcontact.roleDescription}}</p>
+                    </div>
+                    <div class="thirdblock">
+                        <a ng-click="contactskip(pjcontact)">
+                            <i class="icon ion-ios-information-outline contact-info"></i>
+                        </a>
+                    </div>
+            </ion-item>
+        </ion-list>
+        <!--<ion-infinite-scroll  immediate-check="false"-->
+                             <!--distance="10%"></ion-infinite-scroll>-->
+        <!--<div data-page-text data-total-load-records="totalLoadRecords" data-total-records="totalRecords"></div>-->
+    </ion-content>
+</ion-view>

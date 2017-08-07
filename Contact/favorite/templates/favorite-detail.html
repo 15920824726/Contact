@@ -1,0 +1,52 @@
+<ion-view id="favoritedetail" title="favorite-detail" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center" >
+        <button  ng-click="$ionicGoBack()"
+                 class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left"></button>
+    </ion-header-bar>
+    <ion-content   class="hasData" data-ng-show="isShow">
+        <ion-list >
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap" >
+                <img data-ng-src="{{favoriteContactsDetailData.ImageData}}" >
+                <div id="userInfo">
+                    <h3 >
+                        <span >{{favoriteContactsDetailData.Name}} </span>
+                    </h3>
+                    <p>{{favoriteContactsDetailData.Title}}</p>
+                    <p style="font-size:small">{{favoriteContactsDetailData.BpName}}</p>
+                    <p style="font-size: small">{{favoriteContactsDetailData.SubsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="favoriteContactsDetailData.TelephonePattern">
+                <i class="contact-icon-telephone"> {{translate.favoriteDetail.telephone}}</i>
+                <p><a href="tel:{{favoriteContactsDetailData.TelephonePattern}}">{{favoriteContactsDetailData.TelephonePattern}}</a></p>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="favoriteContactsDetailData.Telephone2Pattern">
+                <i class="contact-icon-telephone"> {{translate.favoriteDetail.OtherTelephone}}</i>
+                <p><a href="tel:{{favoriteContactsDetailData.Telephone2Pattern}}">{{favoriteContactsDetailData.Telephone2Pattern}}</a></p>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="favoriteContactsDetailData.MobilePattern">
+                <div  class="firstmobileblock" >
+                    <i class="contact-icon-mobile"> {{translate.favoriteDetail.mobile}}</i>
+                    <p><a href="tel:{{favoriteContactsDetailData.MobilePattern}}">{{favoriteContactsDetailData.MobilePattern}}</a></p>
+                </div>
+                <div  class="secondmobileblock" data-ng-click="deviceHelper.message(favoriteContactsDetailData.MobilePattern)">
+                    <i class="contact-icon-message" style="display: block;text-align: center;"></i>
+                    <p><a href="sms:{{favoriteContactsDetailData.MobilePattern}}">{{translate.favoriteDetail.message}}</a></p>
+                </div>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="favoriteContactsDetailData.TelefaxPattern">
+                <i class="contact-icon-fax"> {{translate.favoriteDetail.fax}}</i>
+                <p><a ng-click="return null" id="favoriteFax">{{favoriteContactsDetailData.TelefaxPattern}}</a></p>
+            </ion-item>
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="favoriteContactsDetailData.Email">
+                <i class="contact-icon-email"> {{translate.favoriteDetail.email}}</i>
+                <p><a href="mailto:{{favoriteContactsDetailData.Email}}">{{favoriteContactsDetailData.Email}}</a></p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-content class="noData" data-ng-show="!isShow">
+        <p>No Data</p>
+    </ion-content>
+
+</ion-view>

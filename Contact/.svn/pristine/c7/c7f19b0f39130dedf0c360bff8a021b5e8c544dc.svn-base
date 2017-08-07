@@ -1,0 +1,42 @@
+{
+  "login": {
+    "loginLanguage": "Language",
+    "loginLanguageEnglish": "English",
+    "loginLanguageEnglishUS": "English(us)",
+    "loginLanguageGerman": "Deutsch",
+    "loginLanguageGermanDE": "Deutsch(de)",
+    "loginLanguageSpanish": " Spanish",
+    "loginLanguageChinese": "中文",
+    "loginPassword": "Password",
+    "loginUsername": "Username",
+    "remember": "Remember",
+    "loginEnterPassword": "enter password",
+    "loginEnterUsername": "enter username",
+    "loginButton": "Login",
+    "loginBusyMessage": "Signing In",
+    "loginFailedMessage": "Logon failed! Please try again...",
+    "loginSuccessfulMessage": "Logon successful! Continue loading, please wait ...",
+    "appName": "Contact",
+    "loginOut": "Login Out",
+    "settings": "Settings",
+    "serverConfig": "Server Config",
+    "continue": "Continue"
+  },
+  "userInfo": {
+    "loginName": "Login Name",
+    "loginAddress": "Login Address",
+    "loginPassword": "Password",
+    "change": "Change",
+    "photo": {
+      "title": "Modify Your Picture",
+      "cancel": "Cancel",
+      "take": "Take A Photo",
+      "choose": "Choose A Photo",
+      "phoneGapOnly": "Your Device Doesn't Support Camera",
+      "uploadFail": "Upload Fail.."
+    },
+    "language":{
+      "changLanguage": "Language"
+    }
+  }
+}

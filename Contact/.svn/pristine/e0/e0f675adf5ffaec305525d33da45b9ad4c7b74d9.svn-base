@@ -1,0 +1,75 @@
+<!--<ion-view class="user-info">-->
+    <!--<ion-header-bar class="bar-header common-bg report-filter-header">-->
+        <!--<div data-report-header></div>-->
+    <!--</ion-header-bar>-->
+    <!--<ion-content on-scroll="false" style="top:70px;">-->
+        <!--<ion-item on-tap="uploadPicture()" style="border: none;">-->
+            <!--<img ng-src="{{userInfo.icon}}">-->
+        <!--</ion-item>-->
+
+        <!--<div class="list user-info-box">-->
+            <!--<label class="item item-input">-->
+                <!--<span class="input-label">{{userInfoTranslation.userInfo.loginName}}:</span>-->
+                <!--<input type="text" readonly data-ng-model="userInfo.username">-->
+            <!--</label>-->
+            <!--<label class="item item-input">-->
+                <!--<span class="input-label">{{userInfoTranslation.userInfo.loginAddress}}:</span>-->
+                <!--<input type="text" readonly data-ng-model="userInfo.email">-->
+            <!--</label>-->
+            <!--<label class="item item-input item-select">-->
+                <!--<span class="input-label">{{userInfoTranslation.language.changeLanguage}}:</span>-->
+                <!--<select data-ng-model="languageId" class="language-select"-->
+                        <!--data-ng-options="item.language as item.languageName for item in languages"-->
+                        <!--data-ng-change="changeLanguage(languageId)"-->
+                        <!--id="language"-->
+                        <!--name="language">-->
+                <!--</select>-->
+            <!--</label>-->
+            <!--<label class="item item-input">-->
+                <!--<span class="input-label">{{userInfoTranslation.userInfo.loginPassword}}:</span>-->
+                <!--<input type="password" style="padding-right: 0;" placeholder="******" readonly-->
+                       <!--data-ng-model="userInfo.password">-->
+            <!--<span class="input-label" style="color:#0067b1;font-size: 12px;"-->
+                  <!--on-tap="showChangePassword()">{{userInfoTranslation.userInfo.change}}</span>-->
+            <!--</label>-->
+        <!--</div>-->
+
+        <!--<form name="userInfoForm" novalidate class="user-info-form">-->
+            <!--<div class="list padding changePasswordBox" ng-if="changePassword">-->
+                <!--<label class="item item-input">-->
+                    <!--<span class="input-label">{{userInfoTranslation.password.oldPassword}}:</span>-->
+                    <!--<input type="password" data-ng-model="password.oldPassword" required ng-pattern="/^[\w\d]{6,16}$/">-->
+                <!--</label>-->
+                <!--<label class="item item-input">-->
+                    <!--<span class="input-label">{{userInfoTranslation.password.newPassword}}:</span>-->
+                    <!--<input type="password" data-ng-model="password.newPassword" required ng-pattern="/^[\w\d]{6,16}$/">-->
+                <!--</label>-->
+                <!--<label class="item item-input">-->
+                    <!--<span class="input-label">{{userInfoTranslation.password.conPassword}}:</span>-->
+                    <!--<input type="password" data-ng-model="password.confirmPassword" required-->
+                           <!--ng-pattern="/^[\w\d]{6,16}$/">-->
+                <!--</label>-->
+                <!--<label class="item item-input btn">-->
+                    <!--<div class="button-bar">-->
+                        <!--<button class="button" on-tap="password.onSave(userInfoForm)">-->
+                            <!--{{userInfoTranslation.password.save}}-->
+                        <!--</button>-->
+                        <!--<a class="button" on-tap="password.onCancel()">-->
+                            <!--{{userInfoTranslation.password.cancel}}-->
+                        <!--</a>-->
+                    <!--</div>-->
+
+                <!--</label>-->
+            <!--</div>-->
+        <!--</form>-->
+        <!--<div class="padding">-->
+            <!--<button class="button button-full button-positive loginOut-btn" data-ng-click="loginOut()">-->
+                <!--{{logOut}}-->
+            <!--</button>-->
+        <!--</div>-->
+
+    <!--</ion-content>-->
+    <!--<ion-footer-bar class="common-bg">-->
+        <!--<div data-report-footer></div>-->
+    <!--</ion-footer-bar>-->
+<!--</ion-view>-->

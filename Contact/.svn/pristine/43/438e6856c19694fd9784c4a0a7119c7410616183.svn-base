@@ -1,0 +1,6 @@
+<ion-content class="no-header" style="top:0!important;">
+    <ion-list>
+        <ion-item ng-click="select(0)">{{translate.New}}</ion-item>
+        <ion-item ng-click="select(1)">{{translate.FromContact}}</ion-item>
+    </ion-list>
+</ion-content>

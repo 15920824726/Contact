@@ -1,0 +1,20 @@
+<ion-view class="setting" view-title="" can-swipe-back="false">
+  <ion-content class="padding">
+    <div class="list">
+      <img src="setting/content/img/logo.png" class="rib-logo"/>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label" data-ng-bind="translate.setting.config.appServer"></span>
+        <textarea data-ng-model="setting.server" data-ng-change="applayShow()"></textarea>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label" data-ng-bind="translate.setting.config.authenticationServer"></span>
+        <textarea data-ng-model="setting.authenticationServer"  data-ng-change="applayShow()"></textarea>
+      </label>
+
+      <button id="apply" class="button button-full button-positive" data-ng-click="apply()"
+              data-ng-bind="translate.setting.config.apply"></button>
+      <button ng-click="goBack()"
+              class=" buttons contact-icon-back button-clear header-item icon-back" data-ng-show="testId"></button>
+    </div>
+  </ion-content>
+</ion-view>

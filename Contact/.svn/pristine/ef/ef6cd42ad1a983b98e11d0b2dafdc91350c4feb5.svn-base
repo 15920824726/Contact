@@ -1,0 +1,29 @@
+{
+  "contactDetail": {
+    "Telephone": "Telephone",
+    "OtherTelephone":"OtherTelephone",
+    "message": "Message",
+    "Mobile":"Mobile",
+    "Fax": "Fax",
+    "Email": "Email",
+    "Favorite":"Favorite",
+    "Edit":"Edit",
+    "FirstName":"First Name",
+    "FamilyName":"Family Name",
+    "MobilePhone":"Mobile Phone",
+    "Add":"Add",
+    "Update":"Update",
+    "Success":"Saved Successfully",
+    "Failure":"Save failure",
+    "InputTelephone":"Input Telephone",
+    "Country":"Country",
+    "AreaCode":"Area Code",
+    "PhoneNumber":"PhoneNumber",
+    "Extension":"Extension",
+    "Ok":"OK",
+    "toSearch":"To search...",
+    "addFtSuccess":"It has been added to favorite!",
+    "removeFt": "It has been deleted from favorite!",
+    "NoMatchesFound":"No matches found"
+  }
+}

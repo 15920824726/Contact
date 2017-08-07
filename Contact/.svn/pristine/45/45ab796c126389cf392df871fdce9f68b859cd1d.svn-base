@@ -1,0 +1,107 @@
+<ion-view id="projectscontactmessage" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center" >
+        <button  ng-click="$ionicGoBack()"
+                class=" button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+        <div class="title" >
+            <h4 class="projectContactTitle" >
+                {{projectContactName}}
+            </h4>
+        </div>
+    </ion-header-bar>
+
+    <ion-content>
+        <!--<ion-list>-->
+            <!--<ion-item class="item-remove-animate item-avatar contact-detail-without-line firstitem" type="item-text-wrap" >-->
+                <!--<img ng-src="{{contactmessage.imageData}}">-->
+                <!--<div >-->
+                    <!--<p style="color:darkgray">-->
+                        <!--{{contactmessage.Title}}-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</ion-item>-->
+
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactmessage.Email"-->
+                      <!--data-ng-click="deviceHelper.email(contactmessage.Email)">-->
+                <!--<i class="contact-icon-email"> Email</i>-->
+                <!--<p>{{contactmessage.Email}}</p>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactmessage.MobilePattern">-->
+                <!--<div style="width: 70%;float: left"  data-ng-click="deviceHelper.call(contactmessage.MobilePattern)">-->
+                    <!--<i class="contact-icon-mobile"> Mobile</i>-->
+                    <!--<p>{{contactmessage.MobilePattern}}</p>-->
+                <!--</div>-->
+                <!--<div style="width: 30%;float: left;" data-ng-click="deviceHelper.message(contactmessage.MobilePattern)">-->
+                    <!--<i class="contact-icon-message" style="  margin-left: 38px;"></i>-->
+                    <!--<p > message</p>-->
+                <!--</div>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactmessage.TelefaxPattern">-->
+                <!--<i class="contact-icon-fax"> Fax</i>-->
+                <!--<p>{{contactmessage.TelefaxPattern}}</p>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactmessage.Telephone2Pattern"-->
+                      <!--data-ng-click="deviceHelper.call(contactmessage.Telephone2Pattern)">-->
+                <!--<i class="contact-icon-telephone"> Telephone</i>-->
+                <!--<p>{{contactmessage.Telephone2Pattern}}</p>-->
+            <!--</ion-item>-->
+            <!--<ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contactmessage.TelephonePattern"-->
+                      <!--data-ng-click="deviceHelper.call(contactmessage.TelephonePattern)">-->
+                <!--<i class="contact-icon-telephone"> Telephone</i>-->
+                <!--<p>{{contactmessage.TelephonePattern}}</p>-->
+            <!--</ion-item>-->
+        <!--</ion-list>-->
+
+        <ion-list >
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+                <img ng-src="{{contact.imageData}}" >
+
+                <div id="userInfo">
+                    <h3 style="font-weight: bold;">
+                        <span style=" font-size: 135%;">{{contact.basicInfo.firstName}} {{contact.basicInfo.familyName}}-</span> <span style=" font-size: 110%;">{{contact.basicInfo.contactRoleDescription}}</span>
+                    </h3>
+                    <p style="font-size:small">{{bpName}}</p>
+                    <p style="font-size: small">{{contact.basicInfo.subsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone.telephone">
+                <i class="contact-icon-telephone"> {{translate.projectDetail.Telephone}}</i>
+                <p><a href="tel:{{contact.telephone.telephone}}">{{contact.telephone.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone2.telephone">
+                <i class="contact-icon-telephone"> {{translate.projectDetail.OtherTelephone}}</i>
+                <p><a href="tel:{{contact.telephone2.telephone}}">{{contact.telephone2.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line item"
+                      type="item-text-wrap" data-ng-show="contact.mobile.phoneNumber">
+                <div id="mobile" >
+                    <i class="contact-icon-mobile "> {{translate.projectDetail.mobile}}</i>
+
+                    <p><a href="tel:{{contact.mobile.phoneNumber}}">{{contact.mobile.phoneNumber}}</a></p>
+                </div>
+                <div id="message" >
+                    <i class="contact-icon-message"></i>
+                    <p><a href="sms:{{contact.mobile.phoneNumber}}">{{translate.projectDetail.mesaage}}</a></p>
+                </div>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.teleFax.telephone">
+                <i class="contact-icon-fax "> {{translate.projectDetail.telefax}}</i>
+
+                <p><a ng-click="return null" id="projectContactFax">{{contact.teleFax.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.basicInfo.email">
+                <i class="contact-icon-email "> {{translate.projectDetail.email}}</i>
+
+                <p><a href="mailto:{{contact.basicInfo.email}}">{{contact.basicInfo.email}}</a></p>
+            </ion-item>
+
+        </ion-list>
+
+</ion-view>

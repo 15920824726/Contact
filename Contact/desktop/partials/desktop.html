@@ -1,0 +1,36 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<!--<ion-nav-bar class="bar-stable bar bar-positive bar-header" >-->
+    <!--<ion-nav-back-button>-->
+    <!--</ion-nav-back-button>-->
+<!--</ion-nav-bar>-->
+<ion-tabs id="desktop" class="tabs-icon-top tabs-color-active-positive ">
+
+
+    <ion-tab title="{{title.favorite}}" icon-off="contact-icon-favorite" icon-on="contact-icon-favorite"
+             href="#/desktop/favorite">
+        <ion-nav-view name="tab-favorite" title="{{title.favorite}}"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{title.contacts}}" icon-off="contact-icon-contact" icon-on="contact-icon-contact"
+             href="#/desktop/contact">
+        <ion-nav-view name="tab-contact"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{title.businessPartner}}" icon-off="contact-icon-businesspatner"
+             icon-on="contact-icon-businesspatner"
+             href="#/desktop/businessPartner">
+        <ion-nav-view name="tab-business-partner"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="{{title.project}}" icon-off="contact-icon-project" icon-on="contact-icon-project"
+             href="#/desktop/project">
+        <ion-nav-view name="tab-project"></ion-nav-view>
+    </ion-tab>
+
+
+
+</ion-tabs>

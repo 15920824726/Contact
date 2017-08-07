@@ -1,0 +1,92 @@
+
+#projectsdetail ion-header-bar .title h4{
+    text-align: center;
+    color:#fff;
+    font-size: initial;
+    margin-top: 12px;
+}
+
+#projectsdetail ion-list .firstitem{
+    background-color:#0167b1 ;
+    text-align: center;
+    border: none;
+}
+
+#projectsdetail ion-list .firstitem p{
+    color: #fff
+}
+
+#projectsdetail ion-header-bar{
+    background-color:#0167b1 ;
+    border: none;
+}
+
+
+#projectsdetail ion-item p:not(:first-child){
+    text-indent: 24px;
+}
+
+#projectsdetail ion-list .headerLine{
+    background-color: #e7eef4;width: 100%; height: 10px;
+}
+
+/*#projectsdetail ion-item:first-child{*/
+/*margin-top: -16px;*/
+/*margin-left: -11px;*/
+/*width: 110%;*/
+/*background-color: #0167b1*/
+/*}*/
+#projectsdetail ion-list ion-item:first-child{
+    background-color: #0167b1;
+}
+
+#projectsdetail ion-list ion-item.contact-detail-with-line{
+    padding: 12px;
+}
+
+#projectsdetail ion-list ion-item:first-child p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*#projectsdetail ion-item+ion-item p{*/
+    /*margin-left: 23px;*/
+/*}*/
+
+#projectsdetail ion-header-bar button{
+    left: 16px;
+}
+
+#projectsdetail ion-content{
+    padding: 0;
+}
+
+#projectsdetail .title.title-left{
+    left: 0!important;
+}
+
+#projectsdetail ion-item:nth-child(n+2){
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    margin-top: 2px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#projectsdetail ion-list ion-item i.contact-icon-contact{
+    opacity: 0.7;
+}
+
+/*apple css*/
+#projectsdetail ion-content{
+    padding: 0;
+}
+
+#projectMap ion-header-bar {
+    background-color: #0167b1
+}
+
+#projectsdetail ion-content a#projectFax a{
+    color: black;
+}

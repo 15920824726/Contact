@@ -1,0 +1,14 @@
+<ion-view class="selectRole" view-title="Select Role" can-swipe-back="false">
+  <ion-header-bar align-title="center">
+
+    <button ng-click="$ionicGoBack()" class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left"></button>
+    <h1 class="title">Select Role</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item item-icon-right role-list {{role.clientId==selection.selectRole.clientId&&role.key==selection.selectRole.key?'on':''}}" ng-repeat="role in roles" type="item-text-wrap">
+        <h2 on-tap="selectRole(role)"  >{{role.value}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

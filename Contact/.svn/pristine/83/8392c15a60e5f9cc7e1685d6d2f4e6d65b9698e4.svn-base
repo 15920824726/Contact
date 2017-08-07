@@ -1,0 +1,49 @@
+{
+  "login": {
+    "loginLanguage": "Sprache",
+    "loginLanguageEnglish": "Englisch",
+    "loginLanguageEnglishUS": "Englisch(US)",
+    "loginLanguageGerman": "Deutsch",
+    "loginLanguageGermanDE": "Deutsch(De)",
+    "loginLanguageSpanish": " Spanisch",
+    "loginLanguageChinese": "Chinesisch",
+    "loginPassword": "Passwort",
+    "loginUsername": "Benutzername",
+    "remember": "Merken",
+    "loginEnterPassword": "Eingabe Passwort",
+    "loginEnterUsername": "Eingabe Benutzername",
+    "loginButton": "Login",
+    "loginBusyMessage": "Signing in",
+    "loginFailedMessage": "Login nicht erfolgreich! Bitte versuchen Sie es noch einmal...",
+    "loginSuccessfulMessage": "Login erfolgreich! Bitte haben Sie geduld...",
+    "appName": "iTWO 4.0 Geschäftspartner",
+    "loginOut": "Ausloggen",
+    "settings": "Einstellungen",
+    "serverConfig": "Serverkonfiguration",
+    "continue": "Weiter"
+  },
+  "userInfo": {
+    "loginName": "Login Name",
+    "loginAddress": "Login Adresse",
+    "loginPassword": "Passwort",
+    "change": "Ändern",
+    "password": {
+      "oldPassword": "Altes Passwort",
+      "newPassword": "Neues Passwort",
+      "conPassword": "Passwort bestätigen",
+      "save": "Speichern",
+      "cancel": "Abbrechen"
+    },
+    "photo": {
+      "title": "Bild ändern",
+      "cancel": "Abbrechen",
+      "take": "Foto aufnehmen",
+      "choose": "Foto auswählen",
+      "phoneGapOnly": "Ihr Device unterstützt die Kamerafunktion nicht",
+      "uploadFail": "Hochladen fehlgeschlagen.."
+    },
+    "language": {
+      "changLanguage": "Sprache"
+    }
+  }
+}

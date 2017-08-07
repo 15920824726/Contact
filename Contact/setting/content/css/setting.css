@@ -1,0 +1,77 @@
+.setting label {
+    padding: 14px;
+    background-color: #e9e9e9;
+    border: none;
+    margin: 0;
+
+}
+
+.setting .list label:nth-child(2) {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.setting .list label:nth-child(3) {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+.setting .contact-icon-back{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+}
+
+.setting label textarea {
+    min-height: 70px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.setting button {
+    border-radius: 5px;
+}
+
+.setting label span {
+    color: #676767;
+    margin-bottom: 5px;
+}
+
+.setting ion-content .list {
+    text-align: center;
+}
+
+.setting ion-content .list img {
+    max-width: 40%;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+}
+
+.setting ion-content .list label {
+    text-align: left;
+}
+
+.setting .list ion-item {
+    margin-bottom: 1px !important;
+}
+
+@media (max-width: 680px) {
+    .setting ion-content .list img {
+        width: 100%;
+    }
+}
+
+/*#aboutsetting .about {*/
+    /*text-align: left;*/
+    /*margin: 0 auto;*/
+    /*display: table;*/
+    /*font-size: 20px;*/
+    /*margin-top: 20px;*/
+/*}*/
+
+/*#aboutsetting .about p {*/
+    /*border-bottom: 1px solid #ddd;*/
+    /*margin-top: 20px;*/
+/*}*/

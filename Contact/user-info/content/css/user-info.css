@@ -1,0 +1,80 @@
+.user-info, .user-info ion-header-bar, .user-info ion-footer-bar {
+    background-color: #fff !important;
+}
+
+.user-info .user-info-box input {
+    background: white;
+    color: #999999;
+}
+
+.user-info .changePasswordBox.ng-enter {
+    transition: 0.8s linear all;
+    -webkit-transition: 0.8s linear all;
+    opacity: 0;
+}
+
+.user-info .changePasswordBox.ng-enter-active {
+    opacity: 1;
+}
+
+.user-info .changePasswordBox.ng-leave {
+    transition: 0.5s linear all;
+    -webkit-transition: 0.5s linear all;
+    opacity: 1;
+}
+
+.user-info .changePasswordBox.ng-leave-active {
+    opacity: 0;
+}
+
+.user-info .changePasswordBox label {
+    background-color: #F0EFF5;
+}
+
+.user-info .changePasswordBox label.btn {
+    background-color: #0067b1;
+}
+
+.user-info .changePasswordBox label.btn button {
+    margin-right: 16px;
+    /*border-radius: 10px;*/
+    background: none;
+    border-right: 1px solid #0059a2;
+    color: white;
+    font-size: 20px;
+}
+
+.user-info .changePasswordBox label.btn a {
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+
+.user-info img {
+    width: 20%;
+}
+
+.user-info span.input-label {
+    color: #000000;
+}
+
+.user-info .user-info-form input.ng-invalid {
+    color: red;
+}
+
+.user-info .user-info-form input.ng-valid {
+    color: green;
+}
+
+.user-info .loginOut-btn {
+    background-color: red !important;
+    border: none;
+}
+
+.button.button-disable {
+    background-color: #ccc
+}
+
+
+
+

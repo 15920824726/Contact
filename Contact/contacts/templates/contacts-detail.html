@@ -1,0 +1,147 @@
+<ion-view id="contacts-detail" hide-nav-bar="true" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center">
+        <button data-ng-if="!detailEdit" ng-click="backContactList()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left"></button>
+        <button data-ng-if="detailEdit" ng-click="closeEdit()"
+                class="button back-button buttons ion-chevron-left  button-clear header-item ion-left">
+        </button>
+    </ion-header-bar>
+    <ion-content class="padding iContent" overflow-scroll="false">
+
+  <ion-list data-ng-show="!detailEdit" class="unDetailEdit">
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+                <img ng-src="{{contact.imageData}}" data-ng-click="choose()">
+
+                <div id="contactUserInfo">
+                    <h3 >
+                       <span>{{contact.basicInfo.firstName}} {{contact.basicInfo.familyName}}  </span>
+                    </h3>
+                    <p >{{contact.basicInfo.contactRoleDescription}}</p>
+                    <p style="font-size:small">{{bpname}}</p>
+                    <p style="font-size: small">{{contact.basicInfo.subsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone.telephone">
+                <i class="contact-icon-telephone"> {{translate.contactDetail.Telephone}}</i>
+
+                <p><a href="tel:{{contact.telephone.telephone}}">{{contact.telephone.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="contact.telephone2.telephone">
+                <i class="contact-icon-telephone"> {{translate.contactDetail.OtherTelephone}}</i>
+
+                <p><a href="tel:{{contact.telephone2.telephone}}">{{contact.telephone2.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line item"
+                      type="item-text-wrap" data-ng-show="contact.mobile.phoneNumber">
+                <div class="mobile" >
+                    <i class="contact-icon-mobile "> {{translate.contactDetail.Mobile}}</i>
+                    <!--<p><a href="tel:{{contact.MobilePattern}}">{{contact.mobile.phoneNumber}}</a></p>-->
+                    <p><a href="tel:{{contact.mobile.phoneNumber}}">{{contact.mobile.phoneNumber}}</a></p>
+                </div>
+                <!--<div id="message" on-tap="deviceHelper.message(contact.mobile.phoneNumber)">-->
+                <div class="message">
+                        <i class="contact-icon-message"></i>
+                        <p><a href="sms:{{contact.mobile.phoneNumber}}">{{translate.contactDetail.message}}</a></p>
+                </div>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.teleFax.telephone">
+                <i class="contact-icon-fax "> {{translate.contactDetail.Fax}}</i>
+                <p><a ng-click="return null" class="contactFax">{{contact.teleFax.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="contact.basicInfo.email">
+          <i class="contact-icon-email "> {{translate.contactDetail.Email}}</i>
+
+          <p><a href="mailto:{{contact.basicInfo.email}}">{{contact.basicInfo.email}}</a></p>
+      </ion-item>
+
+      <ion-item class="contact-detail-with-line" type="item-text-wrap">
+          <button id="contactFavoriteBtn" ng-click="favorite(contact)"
+                  class="button back-button buttons  button-clear header-item">
+              <i class="contact-icon-favorite"></i>
+              <span>{{translate.contactDetail.Favorite}}</span>
+          </button>
+          <button id="contactEditBtn" ng-click="edit()"
+                  class="button back-button buttons  button-clear header-item">
+              <i class="contact-icon-edit"></i>
+              <span> {{translate.contactDetail.Edit}}</span>
+          </button>
+      </ion-item>
+  </ion-list>
+
+  <ion-list data-ng-show="detailEdit" class="detailEdit">
+      <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+          <img ng-src="{{contact.imageData}}" data-on-tap="choose()" >
+
+          <div class="userInfo" >
+              <h3 >
+                  <span >{{contact.basicInfo.firstName}} {{contact.basicInfo.familyName}} </span>
+              </h3>
+              <p >{{contact.basicInfo.contactRoleDescription}}</p>
+              <p style="font-size: small">{{bpname}}</p>
+              <p style="font-size: small">{{contact.basicInfo.subsidiaryDescription}}</p>
+          </div>
+      </ion-item>
+      <div class="headerLine"></div>
+      <form name="userInfoForm" novalidate>
+          <div class="list">
+              <label class="item item-input item-floating-label">
+                  <span>{{translate.contactDetail.FirstName}}</span>
+                  <input type="text" placeholder="First Name" data-ng-model="contact.basicInfo.firstName">
+              </label>
+              <label class="item item-input item-floating-label">
+                  <span>{{translate.contactDetail.FamilyName}}</span>
+                  <input type="text" placeholder="Family Name" data-ng-model="contact.basicInfo.familyName">
+              </label>
+
+              <label class="item item-input item-floating-label not-bottom-padding" style="position: relative" data-ng-click="addPhone($event)" >
+                  <span><i class="contact-icon-telephone"></i>{{translate.contactDetail.Telephone}}</span>
+                  <button  data-ng-if="!status.telephone2" class="add-telephone" >{{translate.contactDetail.Add}}</button>
+              </label>
+              <label class="item item-input item-floating-label" style="padding-top: 0;"  >
+                  <input type="text" placeholder="Telephone" data-ng-model="contact.telephone.telephone" readonly ng-click="selectTelephone(1)">
+              </label>
+
+
+              <label class="item item-input item-floating-label" data-ng-if="status.telephone2">
+                  <span><i class="contact-icon-telephone"></i>{{translate.contactDetail.Telephone}}2</span>
+                  <input type="text" placeholder="Telephone" data-ng-model="contact.telephone2.telephone" readonly ng-click="selectTelephone(2)">
+              </label>
+              <label class="item item-input item-floating-label">
+                  <span><i class="contact-icon-mobile"></i>{{translate.contactDetail.MobilePhone}}</span>
+                  <input type="text" placeholder="Mobild Phone" data-ng-model="contact.mobile.phoneNumber">
+              </label>
+              <label class="item item-input item-floating-label">
+                  <span><i class="contact-icon-fax"></i>{{translate.contactDetail.Fax}}</span>
+                  <input type="text" placeholder="Fax" data-ng-model="contact.teleFax.telephone">
+              </label>
+              <label class="item item-input item-floating-label">
+                  <span><i class="contact-icon-email"></i>{{translate.contactDetail.Email}}</span>
+                  <input type="text" placeholder="Email" data-ng-model="contact.basicInfo.email">
+              </label>
+              <label class="item">
+                  <button class="button button-full button-positive" style="width: 100%"
+                          data-ng-click="update(userInfoForm)">{{translate.contactDetail.Update}}
+                  </button>
+              </label>
+              <!--<label class="item item-input item-floating-label">-->
+                        <!--<span><i class="contact-icon-email"></i>{{translate.contactDetail.Email}}</span>-->
+                        <!--<input type="email" placeholder="Email" data-ng-model="contactEdit.Email"-->
+                               <!--required>-->
+                    <!--</label>-->
+                </div>
+
+            </form>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+

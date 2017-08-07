@@ -1,0 +1,20 @@
+{
+  "setting": {
+    "config": {
+      "authenticationServer": "Authentifizierungsserver",
+      "appServer": "Cloudserver",
+      "apply": "Anwenden",
+      "title": "Einstellungen",
+      "server": "Server",
+      "about": "Über",
+      "logOut": "Ausloggen"
+    },
+    "about": {
+      "appName": "App Name",
+      "company": "Mandant",
+      "contact": "Kontakt",
+      "version": "Version",
+      "title": "Über"
+    }
+  }
+}

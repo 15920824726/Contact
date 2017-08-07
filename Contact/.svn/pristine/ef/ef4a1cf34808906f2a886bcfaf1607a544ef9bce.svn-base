@@ -1,0 +1,13 @@
+{
+  "favorite": {
+    "delete": "Delete",
+    "noData": "No Data"
+  },
+  "favoriteDetail":{
+    "email": "Email",
+    "mobile": "Mobile",
+    "fax": "Fax",
+    "telephone": "Telephone",
+    "OtherTelephone":"OtherTelephone"
+  }
+}

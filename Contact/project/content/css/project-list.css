@@ -1,0 +1,80 @@
+#projectlist ion-header-bar {
+     background-color: #0167b1;
+ }
+
+/*apple css one item*/
+#projectlist ion-header-bar div{
+    width: 90%;
+    text-align: center;
+}
+
+
+
+/*#projectlist ion-content ion-item {*/
+    /*float: left*/
+/*}*/
+#projectlist ion-content ion-item p:first-child{
+    font-weight: bold
+}
+
+/*#projectlist ion-content ion-item .secondblock{*/
+    /*width: 10%;*/
+    /*float: left;*/
+    /*margin-top:10px;*/
+/*}*/
+/*#projectlist ion-content ion-item .secondblock a{*/
+    /*font-size: 150%;*/
+/*}*/
+#projectlist ion-content .list{
+    margin-top: 55px;
+}
+
+#projectlist ion-content .list ion-item {
+    /*width: 90%;*/
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+    margin-bottom: 1px;
+height: 64px;
+}
+
+
+.projectListTitle{
+    margin: 0 auto;
+    color: #fff;
+}
+
+#projectlist .list-inset {
+    margin: 0;
+    padding: 10px 10px;
+    background-color: #e7eef4;
+    position: relative;
+    z-index: 1;
+}
+
+#projectlist .list-inset a{
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#projectlist .projectItem{
+    position: absolute;
+}
+
+#projectlist ion-content ion-item{
+    padding: 10px;
+}
+
+#projectlist ion-header-bar h4{
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*#projectlist .projectItemName{*/
+    /*margin-left: 96px;*/
+/*}*/
+
+/*#projectlist .projectItemNumber{*/
+    /*margin-left: 72px;*/
+/*}*/

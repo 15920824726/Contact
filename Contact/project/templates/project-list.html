@@ -1,0 +1,48 @@
+<ion-view id="projectlist">
+    <ion-header-bar class="bar bar-header  item-input-inset">
+        <div >
+            <h4 class="projectListTitle ">
+                {{selectcompanyname}}
+            </h4>
+        </div>
+        <button data-ng-click="goToSettting()"
+                class="button buttons button-clear header-item setting">
+            <i class="contact-icon-seting"></i>
+        </button>
+    </ion-header-bar>
+
+    <div class="list list-inset ">
+        <div class="item item-input search-input">
+            <i class="placeholder-icon contact-icon-search"></i>
+            <input type="text" ng-model="options.Pattern" ng-change="Search()" placeholder="{{translate.projectDetail.toSearch}}"
+                   ng-model-options="{debounce:500}">
+            <a class="ion-close-circled" ng-click="skipCancel()"></a>
+        </div>
+    </div>
+    <ion-content padding="true" class="content" overflow-scroll="false">
+        <ion-list>
+            <ion-item ng-repeat="project in projectListData"
+                      type="item-text-wrap" on-filter-render-filter>
+
+                <div class="firstblock" ng-click="skipContact(project)">
+                    <!--<p class="projectItem">projectName :</p>-->
+
+                    <p class="projectPattern projectItemName"> {{project.projectName}}</p>
+
+                    <!--<p class="projectItem" data-ng-show="!project.ownDefine.state">projectNo :</p>-->
+
+                    <p class="projectItemNumber projectPattern" data-ng-show="!project.ownDefine.state">
+                        {{project.projectNo}}</p>
+
+                    <p class="projectPattern" data-ng-show="project.ownDefine.state">{{project.ownDefine.value}}</p>
+                </div>
+
+                <!--<div class="secondblock">-->
+                    <!--<a class="contact-icon-info" ng-click="skipeDetail(project)"></a>-->
+                <!--</div>-->
+            </ion-item>
+        </ion-list>
+        <ion-infinite-scroll on-infinite="loadMore()" data-ng-if="moreProject" immediate-check="false"
+                             distance="10%"></ion-infinite-scroll>
+    </ion-content>
+</ion-view>

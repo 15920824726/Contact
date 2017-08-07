@@ -1,0 +1,18 @@
+{
+  "projectDetail":{
+    "status": "状态",
+    "address": "地址",
+    "phoneNumber": "电话号码",
+    "Telephone": "电话号码",
+    "OtherTelephone":"其他电话号码",
+    "telefax": "电子传真",
+    "mobile":"移动号码",
+    "email":"电子邮箱",
+    "customer":"客户",
+    "Customer":"合作伙伴",
+    "CustomerContact":"联系人",
+    "ContactRole":"联系人角色",
+    "mesaage":"短信",
+    "toSearch":"to search..."
+  }
+}

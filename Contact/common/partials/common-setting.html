@@ -1,0 +1,33 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Setting</h1>
+        <i class="contact-icon-back" ng-click="modal.hide()" style="float: left">return</i>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-click="commonSelectCompany()">
+                <span><i class="contact-icon-selectcompany" ></i></span>
+                <span>901 ITwo Best Practice</span>
+                <span><i class="contact-icon-next" style="float: right "></i> </span>
+            </ion-item>
+            <ion-item ng-click="languagemodal.show()">
+                <span><i class="contact-icon-language"></i></span>
+                <span>English</span>
+                <span><i class="contact-icon-next" style="float: right "></i> </span>
+            </ion-item>
+            <ion-item>
+                <span><i class="contact-icon-server"></i></span>
+                <span>Server</span>
+                <span><i class="contact-icon-next" style="float: right"></i> </span>
+            </ion-item>
+            <ion-item ng-click="aboutmodal.show()">
+                <span><i class="contact-icon-info"></i></span>
+                <span>About</span>
+                <span><i class="contact-icon-next" style="float: right "></i> </span>
+            </ion-item>
+
+        </ion-list>
+        <button type="button" style="text-align: center;background-color: red;width: 95%;margin-left: 3%" ng-click="logOut()">Logout </button>
+
+    </ion-content>
+</ion-modal-view>

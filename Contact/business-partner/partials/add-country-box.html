@@ -1,0 +1,74 @@
+<ion-view>
+<ion-header-bar class="bar bar-header bar-light bar-positive reset-barHeight" >
+    <div class="bar-header reset-barHeight">
+        <h4 class="businessPartnerTitle reset-barHeight">
+            {{translate.country.InputTelephone}}
+        </h4>
+    </div>
+</ion-header-bar>
+<ion-content class="has-header" ng-click="hideCountry($event)" scroll="false">
+    <form name="platform-form" class="platform-form ng-pristine ng-valid ng-isolate-scope add-contact-from" novalidate="" style="height: 100%;">
+    <div class="list" >
+        <div class="platform-form-row form-group">
+            <label class="platform-form-label">{{translate.country.Country}}</label>
+            <div class="platform-form-col">
+
+                <div class="control-directive ng-pristine ng-untouched ng-valid ng-isolate-scope" >
+                    <div  class="ng-scope ng-isolate-scope">
+                    <div class="input-group lookup-container form-control ng-scope">
+                        <input placeholder="Country" type="text" class="display-country input-group-content ng-pristine ng-valid ng-touched" data-ng-model="entity.displayText" data-ng-change="onChange(entity.displayText)"   />
+                        <span class="input-group-btn" >
+                            <button  class="display-country btn btn-default input-sm" data-ng-click="editValue($event)">
+                                <i class="caret"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <ion-scroll class="country-search" ng-show="status.searchBox" style="height: 90%" delegate-handle="country-handle">
+                <ion-list>
+                    <ion-item ng-repeat="county in countryData|orderBy : 'description'" ng-click="selectCountry(county)">{{county.description}}</ion-item>
+                </ion-list>
+            </ion-scroll>
+        </div>
+
+        <div class="platform-form-row form-group">
+            <label class="platform-form-label" >{{translate.country.AreaCode}}</label>
+            <div class="platform-form-col">
+                <input placeholder="Area Code" type="text" ng-change="changeTelephone()" class="domain-type-description form-control ng-pristine ng-valid ng-scope ng-touched" data-ng-model="entity.AreaCode"  data-ng-pattern-restrict="^[\s\S]{0,42}$"  />
+            </div>
+        </div>
+
+        <div class="platform-form-row form-group">
+            <label class="platform-form-label">{{translate.country.PhoneNumber}}</label>
+            <div class="platform-form-col">
+                <input placeholder="PhoneNumber" ng-change="changeTelephone()" type="text" class="domain-type-description form-control ng-pristine ng-valid ng-scope ng-touched" data-ng-model="entity.PhoneNumber"  data-ng-pattern-restrict="^[\s\S]{0,42}$"  />
+            </div>
+        </div>
+
+        <div class="platform-form-row form-group">
+            <label class="platform-form-label" >{{translate.country.Extension}}</label>
+            <div class="platform-form-col">
+                <input placeholder="Extension" ng-change="changeTelephone()" type="text" class="domain-type-description form-control ng-pristine ng-valid ng-scope ng-touched" data-ng-model="entity.Extention"  data-ng-pattern-restrict="^[\s\S]{0,42}$"  />
+            </div>
+        </div>
+
+        <div class="platform-form-row form-group">
+            <label class="platform-form-label" >{{translate.country.Telephone}}</label>
+            <div class="platform-form-col">
+                <input placeholder="Telephone" type="text" readonly class="domain-type-description form-control ng-pristine ng-valid ng-scope ng-touched" data-ng-model="entity.Telephone"  data-ng-pattern-restrict="^[\s\S]{0,42}$"  />
+            </div>
+
+        </div>
+
+        <label>
+            <button class="button button-full button-positive" style="width: 100%"
+                    data-ng-click="setTelephone()">{{translate.country.Ok}}
+            </button>
+        </label>
+
+    </div>
+        </form>
+</ion-content>
+</ion-view>

@@ -1,0 +1,152 @@
+/*#projectscontactmessage ion-header-bar{*/
+    /*background-color: #0167b1;*/
+    /*border: none;*/
+/*}*/
+
+
+
+/*#projectscontactmessage ion-item img{*/
+    /*width: 64px;*/
+    /*height: 64px*/
+/*}*/
+
+/*#projectscontactmessage ion-content .list ion-item+ion-item {*/
+    /*!*width: 90%;*!*/
+    /*margin: 0 10px;*/
+    /*border: none;*/
+    /*border-bottom: 1px #d3d3d3 solid;*/
+
+/*}*/
+
+
+/*#projectscontactmessage ion-list:first-child h3{*/
+    /*font-weight: bold;*/
+    /*color: #fff*/
+/*}*/
+
+/*#projectscontactmessage ion-list .firstitem{*/
+    /*margin-top: -16px;*/
+    /*margin-left: -11px;*/
+    /*width: 110%;*/
+    /*background-color: #0167b1;*/
+/*}*/
+
+/*#projectscontactmessage ion-item+ion-item p{*/
+    /*margin-left: 23px;*/
+/*}*/
+
+/*#projectscontactmessage ion-header-bar button{*/
+    /*position: absolute;*/
+    /*left: 16px;*/
+/*}*/
+
+
+#projectscontactmessage .scroll {
+    margin-top: -1px;
+}
+
+#projectscontactmessage ion-header-bar {
+    background-color: #0167b1;
+}
+
+#projectscontactmessage ion-header-bar button{
+    margin-left: 16px;
+}
+
+#projectscontactmessage .list ion-item {
+    /*width: 90%;*/
+    margin: 0 10px;
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+
+}
+
+#projectscontactmessage .list ion-item:first-child {
+    margin: 0;
+    width: 100%;
+    background-color: #0167b1;
+    border: none;
+    padding: 16px;
+    display: flex;
+}
+
+
+#projectscontactmessage .list ion-item:last-child button {
+    color: #000;
+}
+
+#projectscontactmessage ion-item #message{
+    float: left;width: 40%
+}
+
+#projectscontactmessage ion-item #mobile{
+    float: left;width: 60%
+}
+
+#projectscontactmessage ion-item #mobile p{
+    text-indent: 0;
+    text-align: center;
+}
+
+#projectscontactmessage .list ion-item:last-child button i {
+    display: block;
+    margin-bottom: -10px;
+}
+
+#projectscontactmessage .list ion-item:first-child h3 {
+    color: #fff;
+}
+
+#projectscontactmessage .list ion-item p {
+    text-indent: 24px;
+}
+
+#projectscontactmessage .list ion-item:first-child p {
+    color: #6ebced;
+    text-indent: 0;
+}
+
+#projectscontactmessage ion-header-bar {
+    border: none;
+}
+
+
+#projectscontactmessage ion-header-bar button {
+    color: #fff;
+}
+
+
+#projectscontactmessage img {
+    position: static;
+    margin-right: 20px;
+    margin-top: 7px;
+    max-width: 59px;
+    max-height: 59px;
+}
+
+#projectscontactmessage .userInfo{
+    display: inline-block;
+}
+
+#projectscontactmessage #message{
+    position: absolute;
+    right: 5%;
+}
+#projectscontactmessage #message i{
+    display: block;
+    text-align: center;
+}
+
+
+#projectscontactmessage ion-content{
+    padding: 0;
+}
+
+/* apple css*/
+#projectscontactmessage ion-item #mobile p a{
+    color: black;
+}
+
+#projectcontactmessage ion-content a#projectContactFax a{
+    color: black;
+}

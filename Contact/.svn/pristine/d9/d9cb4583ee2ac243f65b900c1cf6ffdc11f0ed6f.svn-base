@@ -1,0 +1,10 @@
+{
+  "companyRole": {
+    "company": {
+      "selectCompany": "Select Company"
+    },
+    "role": {
+      "selectRole": "Select Role"
+    }
+  }
+}

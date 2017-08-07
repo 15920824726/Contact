@@ -1,0 +1,20 @@
+{
+  "setting": {
+    "config": {
+      "authenticationServer": "Authentication Server",
+      "appServer": "Cloud Server",
+      "apply": "Apply",
+      "title":"Setting",
+      "server":"Server",
+      "about":"About",
+      "logOut":"Log Out"
+    },
+    "about": {
+      "appName": "AppName",
+      "company": "Company",
+      "contact": "contact",
+      "version": "Version",
+      "title": "About"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<ion-view id="addBusinessPartnerContact" hide-nav-bar="true" class="businessPartner-box add-businessPartner-box" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center">
+        <button  ng-click="goBack()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+        <h4 class="businessPartnerTitle">
+            {{translate.businessPartner.Add}}
+        </h4>
+    </ion-header-bar>
+    <ion-content class="padding iContent" overflow-scroll="false">
+        <ion-list data-ng-if="detailEdit" id="detailEdit">
+
+            <form name="userInfoForm" novalidate>
+                <div class="list">
+                    <label class="item item-input item-floating-label">
+                        <span>{{translate.businessPartner.FirstName}}</span>
+                        <input type="text" placeholder="First Name" data-ng-model="contact.firstName">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span>{{translate.businessPartner.FamilyName}}</span>
+                        <input type="text" placeholder="Family Name" data-ng-model="contact.familyName">
+                    </label>
+                    <label class="item item-input item-floating-label not-bottom-padding" style="position: relative" data-ng-click="addPhone($event)" >
+                        <span><i class="contact-icon-telephone"></i>{{translate.businessPartner.Telephone}}</span>
+                        <button  data-ng-if="!status.telephone2" class="add-telephone" >{{translate.businessPartner.Add}}</button>
+                    </label>
+                    <label class="item item-input item-floating-label" style="padding-top: 0;"  >
+                        <input type="text" placeholder="Telephone" data-ng-model="contact.telephone" readonly ng-click="selectTelephone(1)">
+                    </label>
+                    <label class="item item-input item-floating-label" data-ng-if="status.telephone2">
+                        <span><i class="contact-icon-telephone"></i>{{translate.businessPartner.Telephone}}2</span>
+                        <input type="text" placeholder="Telephone" data-ng-model="contact.telephone2" readonly ng-click="selectTelephone(2)">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-mobile"></i>{{translate.businessPartner.MobilePhone}}</span>
+                        <input type="text" placeholder="Mobild Phone" data-ng-model="contact.mobile">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-fax"></i>{{translate.businessPartner.Fax}}</span>
+                        <input type="text" placeholder="Fax" data-ng-model="contact.fax">
+                    </label>
+                    <label class="item item-input item-floating-label">
+                        <span><i class="contact-icon-email"></i>{{translate.businessPartner.Email}}</span>
+                        <input type="email" placeholder="Email" data-ng-model="contact.email">
+                    </label>
+                    <label class="item">
+                        <button class="button button-full button-positive login-btn" style="width: 100%;" data-ng_class="checkInput()"
+                                data-ng-click="add(contact)">{{translate.businessPartner.Add}}
+                        </button>
+                    </label>
+                </div>
+
+            </form>
+        </ion-list>
+    </ion-content>
+</ion-view>
+
+
+

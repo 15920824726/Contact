@@ -1,0 +1,208 @@
+#contacts-detail .scroll {
+    margin-top: -1px;
+}
+
+#contacts-detail ion-header-bar {
+    background-color: #0167b1;
+}
+
+#contacts-detail .list ion-item {
+    /*width: 90%;*/
+    margin: 0 10px;
+    border: none;
+    border-bottom: 1px #d3d3d3 solid;
+
+}
+
+#contacts-detail .list ion-item:first-child {
+    margin: 0;
+    width: 100%;
+    background-color: #0167b1;
+    border: none;
+    padding: 16px;
+    display: flex;
+}
+
+
+#contacts-detail .list label{
+    margin-top: 5px;
+}
+
+
+#contacts-detail .list ion-item.contact-detail-with-line{
+    padding: 12px;
+}
+
+#contacts-detail .list ion-item:last-child {
+    text-align: center;
+}
+
+#contacts-detail .list ion-item:last-child button {
+    color: #000;
+}
+
+#contacts-detail .list ion-item:last-child button i {
+    display: block;
+    margin-bottom: -10px;
+}
+
+#contacts-detail .list ion-item:first-child h3 {
+    color: #fff;
+}
+
+#contacts-detail .list ion-item p {
+    text-indent: 24px;
+}
+
+#contacts-detail .list ion-item:first-child p {
+    color: #6ebced;
+    text-indent: 0;
+}
+
+#contacts-detail ion-header-bar {
+    border: none;
+}
+
+/*#contacts-detail ion-header-bar button {*/
+/*!*margin-left: 6.5%;*!*/
+/*margin-left: 16px;*/
+/*}*/
+
+#contacts-detail ion-header-bar button {
+    color: #fff;
+}
+
+
+
+#contactFavoriteBtn {
+    margin-right: 10%;
+    color:black;
+}
+
+#contactEditBtn {
+    margin-left: 10%;
+}
+
+#contacts-detail img {
+    position: static;
+    margin-right: 20px;
+    margin-top: 7px;
+    max-width: 59px;
+    max-height: 59px;
+    min-width: 59px;
+    min-height: 59px;
+}
+
+#contacts-detail .unDetailEdit #contactUserInfo{
+    width: 82%;
+}
+
+#contacts-detail .unDetailEdit #contactUserInfo h3{
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+#contacts-detail .unDetailEdit #contactUserInfo span:first-child{
+    font-size: 135%;
+}
+
+#contacts-detail .unDetailEdit #contactUserInfo p{
+    line-height: 1
+}
+
+#contacts-detail .unDetailEdit #contactUserInfo p:nth-child(2){
+    margin-top: -3px;
+    color: #fff;
+}
+
+/*#contacts-detail #unDetailEdit #userInfo p:nth-child(3){*/
+    /*margin-top: 5px;*/
+/*}*/
+
+
+#contacts-detail .detailEdit .userInfo h3{
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+#contacts-detail .detailEdit .userInfo span{
+    font-size: 135%;
+}
+
+#contacts-detail .detailEdit .userInfo p{
+    line-height: 1;
+}
+
+#contacts-detail .detailEdit .userInfo p:nth-child(2){
+    margin-top: -3px;
+    color: #fff;
+}
+
+/*#contacts-detail #detailEdit .userInfo p:nth-child(3){*/
+    /*margin-top: 5px;*/
+/*}*/
+
+#contacts-detail .message i{
+    display: block;
+    text-align: center;
+}
+
+
+.detailEdit .list label{
+    border: none;
+    /*width: 90%;*/
+    /*margin: 0 auto;*/
+    padding-right: 16px;
+}
+
+.detailEdit .list label input{
+    /*width: 95%;*/
+    border: 1px #d3d3d3 solid;
+    border-radius: 5px;
+}
+
+.detailEdit button{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#contacts-detail ion-content{
+    padding: 0;
+}
+
+#contacts-detail ion-item .message{
+    float: left;width: 40%
+}
+
+#contacts-detail ion-item .mobile{
+    float: left;width: 60%
+}
+
+#contacts-detail ion-item  .message p{
+    text-indent: 0;
+    text-align: center;
+}
+
+
+
+#businessPartner .bar-header {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*apple css*/
+#contacts-detail .message p a{
+    color: black;
+}
+
+#contacts-detail ion-content a.contactFax a{
+    color: black;
+}

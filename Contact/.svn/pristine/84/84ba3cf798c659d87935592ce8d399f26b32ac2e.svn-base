@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<!-- <html manifest="common/content/css/cache.appcache"> -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Contact</title>
+    <!-- lib:css -->
+    <link rel="stylesheet" href="lib/ionic/css/ionic.css">
+    <link rel="stylesheet" href="contacts/content/css/common.css">
+    <link rel="stylesheet" href="contacts/content/css/contacts-list.css">
+    <link rel="stylesheet" href="contacts/content/css/contacts-detail.css">
+    <link rel="stylesheet" href="user-info/content/css/user-info.css">
+
+    <link rel="stylesheet" href="company-role/content/css/common.css">
+    <link rel="stylesheet" href="company-role/content/css/company-role.css">
+
+    <!--business partner-->
+    <link rel="stylesheet" href="business-partner/content/css/businessPartnerDetail.css">
+    <link rel="stylesheet" href="business-partner/content/css/businessPartner.css">
+    <link rel="stylesheet" href="business-partner/content/css/bpContactDetail.css">
+
+    <!--contacts-->
+    <link rel="stylesheet" href="contacts/content/css/contacts-list.css">
+
+    <!--desktop-->
+    <link rel="stylesheet" href="desktop/content/css/desktop.css">
+    <link rel="stylesheet" href="common/content/css/common.css">
+    <link rel="stylesheet" href="common/content/css/style.css">
+
+    <!--project.list-->
+    <link href="project/content/css/project-list.css" rel="stylesheet">
+    <link href="project/content/css/project-contact.css" rel="stylesheet">
+    <link href="project/content/css/project-contact-message.css" rel="stylesheet">
+    <link href="project/content/css/project-details.css" rel="stylesheet">
+    <!--favorite.js-->
+    <link href="favorite/content/css/favorite.css">
+
+    <!--setting-->
+    <link rel="stylesheet" href="setting/content/css/setting.css">
+    <link rel="stylesheet" href="setting/content/css/setting-list.css">
+
+    <!--login-->
+    <link rel="stylesheet" href="user-info/content/css/login.css">
+
+    <!--favorite-->
+    <link rel="stylesheet" href="favorite/content/css/favorite.css">
+    <link rel="stylesheet " href="favorite/content/css/favorite-detail.css">
+
+    <link href="common/content/img/favicon.png" rel="shortcut icon">
+    <!-- iOS 7 iPad (retina) -->
+    <link href="common/content/img/icon-152.png" sizes="152x152" rel="apple-touch-icon">
+    <!-- iOS 6 iPad (retina) -->
+    <link href="common/content/img/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <!-- iOS 7 iPhone (retina) -->
+    <link href="common/content/img/icon-120.png" sizes="120x120" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone (retina) -->
+    <link href="common/content/img/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <!-- iOS 7 iPad -->
+    <link href="common/content/img/icon-76.png" sizes="76x76" rel="apple-touch-icon">
+    <!-- iOS 6 iPad -->
+    <link href="common/content/img/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone -->
+    <link href="common/content/img/icon-57.png" sizes="57x57" rel=" -touch-icon">
+    <!-- endinject -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/01_jquery/jquery-2.1.0.js"></script>
+
+    <!--<script src="https://www.bing.com/api/maps/mapcontrol"></script>-->
+    <!-- lib:js -->
+    <!--<script type="text/javascript" src="https://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&s=1"></script>-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATKBhVqIulVmVb_OrYwenAtKUVGwjs3n4"></script>-->
+
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="lib/IOS9_Patch/angular-ios9-uiwebview.patch.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+    <script src="lib/20_libs/accounting.js"></script>
+    <script src="lib/20_libs/lodash.js"></script>
+    <script src="lib/20_libs/math.js"></script>
+    <script src="lib/20_libs/moment-with-locales.js"></script>
+    <script src="lib/21_libs-angular/angular-translate.js"></script>
+    <script src="lib/21_libs-angular/translate-addons/angular-translate-handler-log.js"></script>
+    <script src="lib/21_libs-angular/translate-addons/angular-translate-loader-partial.js"></script>
+    <script src="lib/utils/utils.js"></script>
+    <script src="lib/30_platform/authentication.js"></script>
+    <script src="lib/linq/linq.min.js"></script>
+    <script src="lib/network-tips/network-tips.js"></script>
+    <script src="lib/status-bar-overlay/status-bar-overlay.js"></script>
+
+    <!-- platform:js -->
+    <script src="platform/global.js"></script>
+    <script src="platform/platform.js"></script>
+    <script src="platform/services/platform-messenger-service.js"></script>
+    <script src="platform/services/http-error-interceptor.js"></script>
+    <script src="platform/services/platform-context-service.js"></script>
+    <script src="platform/services/platform-logon-service.js"></script>
+    <script src="platform/services/platform-translate-service.js"></script>
+
+    <script src="platform/services/platform-user-info-service.js"></script>
+    <script src="platform/services/platform-local-session-storage-service.js"></script>
+    <script src="platform/services/platform-device-service.js"></script>
+    <script src="platform/services/platform-des-service.js"></script>
+
+    <!--common-->
+    <script src="common/module.js"></script>
+
+    <script src="common/services/network-translation-handler.js"></script>
+    <script src="common/services/common-data-service.js"></script>
+    <script src="common/services/company-role-data-service.js"></script>
+    <script src="common/services/base-controller-data-service.js"></script>
+    <script src="common/services/common-contactlist-data-service.js"></script>
+    <script src="common/services/common-favorite-data-service.js"></script>
+    <script src="common/services/common-business-partner-data-service.js"></script>
+    <script src="common/services/phone-helper.js"></script>
+    <script src="common/services/common-setting.js"></script>
+    <script src="common/services/close-popup-service.js"></script>
+    <script src="common/services/common-project-data-service.js"></script>
+    <script src="common/services/common-mapkey.js"></script>
+    <!--<script src="common/services/phone-helper.js"></script>-->
+    <script src="common/services/common-setting.js"></script>
+    <script src="common/directives/contacts-footer.js"></script>
+    <script src="common/directives/contacts-header.js"></script>
+    <!-- module -->
+
+    <script src="user-info/module.js"></script>
+    <script src="user-info/services/user-info-http-service.js"></script>
+    <script src="user-info/services/user-info-data-service.js"></script>
+    <script src="user-info/controllers/login-controller.js"></script>
+    <script src="user-info/controllers/user-info-controller.js"></script>
+    <!--setting-->
+    <script src="setting/module.js"></script>
+    <!--company role-->
+    <script src="company-role/module.js"></script>
+    <!--desktop-->
+    <script src="desktop/module.js"></script>
+    <!--contacts-->
+    <script src="contacts/module.js"></script>
+    <!--favorite-->
+    <script src="favorite/module.js"></script>
+    <!--project-->
+    <script src="project/modules.js"></script>
+    <!--business partner-->
+    <script src="business-partner/module.js"></script>
+    <!-- deirectives -->
+
+    <!-- service -->
+    <script src="company-role/services/company-role-data-service.js"></script>
+    <script src="company-role/services/company-role-http-service.js"></script>
+
+    <!--contact-->
+    <script src="contacts/services/contact-detail-data-service.js"></script>
+    <script src="contacts/services/contact-detail-http-service.js"></script>
+    <script src="contacts/services/contacts-list-data-service.js"></script>
+    <script src="contacts/services/contacts-list-http-service.js"></script>
+    <script src="contacts/services/contact-list-summary-data-service.js"></script>
+    <script src="contacts/services/contact-list-summary-http-service.js"></script>
+    <script src="contacts/services/contact-datail-byid-data.js"></script>
+    <script src="contacts/services/contact-detail-byid-http.js"></script>
+    <script src="contacts/services/contact-img-data.js"></script>
+    <script src="contacts/services/contact-img-http.js"></script>
+    <!--favorite-->
+    <!--<script src="favorite/services/favorite-sqlite-service.js"></script>-->
+    <!--<script src="favorite/services/favorite-data-service.js"></script>-->
+    <script src="favorite/controllers/favorite-detail-controller.js"></script>
+    <script src="favorite/controllers/favorite-controller.js"></script>
+    <!--business partner-->
+    <script src="business-partner/services/business-partner-http-service.js"></script>
+    <script src="business-partner/services/business-partner-data-service.js"></script>
+    <script src="business-partner/services/business-partner-detail-http-service.js"></script>
+    <script src="business-partner/services/business-partner-detail-data-service.js"></script>
+    <script src="business-partner/services/business-partner-contactList-http-service.js"></script>
+    <script src="business-partner/services/business-partner-contactList-data-service.js"></script>
+    <script src="business-partner/services/business-partner-summary-list-data.js"></script>
+    <script src="business-partner/services/business-partner-summary-list-http.js"></script>
+    <script src="business-partner/services/business-partner-summaryDetail-data.js"></script>
+    <script src="business-partner/services/business-partner-summaryDetail-http.js"></script>
+    <script src="business-partner/services/business-partner-summaryContacts-http.js"></script>
+    <script src="business-partner/services/business-partner-summaryContacts-data.js"></script>
+    <script src="business-partner/services/business-partner-img-data.js"></script>
+    <script src="business-partner/services/business-partner-img-http.js"></script>
+    <script src="business-partner/services/bp-contact-img-data.js"> </script>
+    <script src="business-partner/services/bp-contact-img-http.js"></script>
+    <script src="business-partner/services/bp-contact-detail-data.js"></script>
+    <script src="business-partner/services/bp-contact-detail-http.js"></script>
+    <!-- controllers -->
+    <!--desktop-->
+    <script src="desktop/controllers/desktop-controller.js"></script>
+    <!--contacts-->
+    <script src="contacts/controllers/contacts-main-controller.js"></script>
+    <script src="contacts/controllers/contacts-list-controller.js"></script>
+    <script src="contacts/controllers/contacts-detail-controller.js"></script>
+    <!--setting-->
+    <script src="setting/controllers/setting-main-controller.js"></script>
+    <script src="setting/controllers/setting-server-config-controller.js"></script>
+    <script src="setting/controllers/setting-config-controller.js"></script>
+    <!--favorite-->
+    <script src="favorite/controllers/favorite-controller.js"></script>
+    <!--company role-->
+    <script src="company-role/controllers/company-role-main-controller.js"></script>
+    <script src="company-role/controllers/company-controller.js"></script>
+    <script src="company-role/controllers/role-controller.js"></script>
+    <!--project-->
+    <script src="project/services/project-list-data-service.js"></script>
+    <script src="project/services/project-list-http-service.js"></script>
+    <script src="project/services/project-contacts-data-service.js"></script>
+    <script src="project/services/project-contacts-http-service.js"></script>
+    <script src="project/services/project-icon-data.js"></script>
+    <script src="project/services/project-icon-http.js"></script>
+    <script src="project/controllers/protect-contacts-message-controller.js"></script>
+    <script src="project/controllers/project-contacts-controller.js"></script>
+    <script src="project/controllers/project-list-controller.js"></script>
+    <script src="project/controllers/project-details-controller.js"></script>
+    <script src="project/controllers/project-map.js"></script>
+
+    <!--business partner-->
+    <script  src="business-partner/controllers/business-partner-controller.js"></script>
+    <script src="business-partner/controllers/business-partner-detail-controller.js"></script>
+    <script src="business-partner/controllers/business-partner-contactList-controller.js"></script>
+    <script src="business-partner/controllers/business-partner-contact-detail-controller.js"></script>
+    <script src="business-partner/controllers/add-business-partner-contact-controller.js"></script>
+    <script src="business-partner/controllers/business-partner-map.js"></script>
+
+    <!--directive-->
+    <script src="contacts/directives/on-filter-render-filter.js"></script>
+    <script src="business-partner/directives/on-filter-render-filter.js"></script>
+
+
+    <script src="app.js"></script>
+
+    <script type="text/javascript">
+        utils.stopTouchMoveDefaultEvent();
+    </script>
+
+</head>
+<body ng-app="App">
+<div class="loading-page"></div>
+<!-- Statusbar overlay-->
+<div data-status-bar-overlay></div>
+<ion-nav-view onscroll="false"></ion-nav-view>
+</body>
+</html>

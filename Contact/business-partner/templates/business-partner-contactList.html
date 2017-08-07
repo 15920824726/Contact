@@ -1,0 +1,43 @@
+<ion-view id="businessPartnerContactList" class="businessPartner-box" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset">
+        <button  ng-click="$ionicGoBack()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+        <div class="title">
+            <h4 class="businessPartnerTitle">
+                {{selectbpname}}
+            </h4>
+        </div>
+
+        <button  ng-click="showLocalContact()"
+                class="button buttons ion-chevron-right button-clear header-item ion-plus add-button"></button>
+    </ion-header-bar>
+    <div class="list list-inset" >
+        <div class="item item-input search-input">
+            <i class="placeholder-icon contact-icon-search"></i>
+            <input type="text" data-ng-model="options"  placeholder="{{translate.businessPartner.toSearch}}" ng-model-options="{debounce:500}">
+            <a class="ion-close-circled" ng-click="skipCancel()"></a>
+        </div>
+    </div>
+    <ion-content class="iContent" padding="true" overflow-scroll="false" data-ng-show="showBPContactListContent">
+        <ion-list >
+            <ion-item class="item-remove-animate contact-item item-icon-right "
+                      ng-repeat="contact in businessPartnerContactLists |filter:bsfunc"
+                      nav-transition
+                      type="item-text-wrap" href="#/desktop/businessPartnerContactdetail/{{contact.id}}/{{contact.bpName1}}"  on-filter-render-filter >
+                <div class="contact-item-img" >
+                    <div class="contact-item-detail">
+                        <p class="contact-item-name" style="font-weight: bold">{{contact.firstName}} {{contact.familyName}}</p>
+                        <i class="contact-icon-selectrole"></i>
+
+                        <p class="contact-item-phone bpName" style="font-size: small">{{contact.roleDescription}}</p>
+                    </div>
+                </div>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+    <ion-content class="iContent nodata" padding="true" overflow-scroll="false" data-ng-show="!showBPContactListContent">
+        <p style="line-height: 1.5;position: absolute;top:40%;width: 90%;text-align: center;font-size: x-large;color: rgb(169,169,169)">{{translate.businessPartner.noDataMessage}}</p>
+    </ion-content>
+
+</ion-view>

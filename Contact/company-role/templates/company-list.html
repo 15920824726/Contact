@@ -1,0 +1,25 @@
+<ion-view class="selectCompany" view-title="Select Company" id="mycompanylist" can-swipe-back="false">
+    <ion-header-bar align-title="center">
+        <button class="button back-button buttons ion-chevron-left button-clear header-item icon-back ion-left" ng-click="$ionicGoBack()"
+           data-ng-if="companyId"></button>
+        <!--<a class="goSetting setting" data-ng-if="settingStatus" href="#/setting/configSetting">-->
+            <!--<i class="contact-icon-back">-->
+            <!--</i>-->
+        <!--</a>-->
+        <button  ng-click="GoBack()"
+                 class=" button back-button buttons ion-chevron-left button-clear header-item icon-back" data-ng-if="settingStatus"></button>
+        <!--<button ng-click="$ionicGoBack()" data-ng-if="!companyId" class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>-->
+        <h1 class="title"><i data-ng-if="!companyId" class="contact-icon-selectcompany "></i>{{translate.companyRole.company.selectCompany}}</h1>
+    </ion-header-bar>
+    <ion-content overflow-scroll="false">
+        <ion-list>
+            <ion-item class="item item-icon-right company-list {{company.id==selection.selectCompany.id?'on':''}}" on-tap="selectCompany(company)" ng-repeat="company in companys|orderBy : 'code'" >
+                <span class="control-icons" data-ng_class="::classByType(company)"> </span>
+                <!--2017.1.16 修改<span on-tap="selectCompany(company)">{{company.code +' ' + company.name}}</span>-->
+                <span>{{company.code +' ' + company.name}}</span>
+                <a data-ng-if="company.children" class="icon ion-chevron-right icon-accessory"
+                   href="#/companyRole/next/{{company.id}}" ></a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

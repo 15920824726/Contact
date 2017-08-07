@@ -1,0 +1,18 @@
+{
+  "projectDetail":{
+    "status": "Status",
+    "address": "Address",
+    "phoneNumber": "PhoneNumber",
+    "Telephone": "Telephone",
+    "OtherTelephone":"OtherTelephone",
+    "telefax": "Fax",
+    "mobile":"Mobile",
+    "email":"Email",
+    "customer":"Customer",
+    "Customer":"Customer",
+    "CustomerContact":"Customer Contact",
+    "ContactRole":"ContactRole",
+    "mesaage":"Mesaage",
+    "toSearch":"To search..."
+  }
+}

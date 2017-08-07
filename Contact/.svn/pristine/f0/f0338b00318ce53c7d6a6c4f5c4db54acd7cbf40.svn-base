@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html manifest="common/content/css/cache.appcache">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="content/css/contact.min.css">
+
+    <link href="content/img/favicon.png" rel="shortcut icon">
+    <!-- iOS 7 iPad (retina) -->
+    <link href="content/img/icon-152.png" sizes="152x152" rel="apple-touch-icon">
+    <!-- iOS 6 iPad (retina) -->
+    <link href="content/img/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <!-- iOS 7 iPhone (retina) -->
+    <link href="content/img/icon-120.png" sizes="120x120" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone (retina) -->
+    <link href="content/img/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <!-- iOS 7 iPad -->
+    <link href="content/img/icon-76.png" sizes="76x76" rel="apple-touch-icon">
+    <!-- iOS 6 iPad -->
+    <link href="content/img/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <!-- iOS 6 iPhone -->
+    <link href="content/img/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <!-- endinject -->
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="lib/lib.min.js"></script>
+    <script src="lib/ionic.bundle.js"></script>
+    <script src="lib/30_platform/authentication.js"></script>
+    <script src="lib/lib.ng.min.js"></script>
+
+    <script src="platform/global.js"></script>
+    <script src="js/module.min.js"></script>
+    <script src="js/submodule.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <script type="text/javascript">
+        utils.stopTouchMoveDefaultEvent();
+    </script>
+
+</head>
+<body ng-app="App">
+<script src="lib/android/check-android-environment.js"></script>
+<div class="loading-page"></div>
+<!-- Statusbar overlay-->
+<div data-status-bar-overlay></div>
+<ion-nav-view onscroll="false"></ion-nav-view>
+</body>
+</html>

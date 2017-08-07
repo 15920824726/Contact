@@ -1,0 +1,78 @@
+.control-icons {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+/* 2 */
+.control-icons.ico-comp-root {
+    background-image: url("../img/comp-root.svg");
+}
+
+/* 1 */
+.control-icons.ico-comp-businessunit {
+    background-image: url(../img/comp-businessunit.svg);
+}
+
+/* 3 */
+.control-icons.ico-comp-profitcenter {
+    background-image: url(../img/comp-profitcenter.svg);
+}
+
+.company-list.item-icon-right .icon-accessory {
+    text-decoration: none;
+}
+
+.company-list.on{
+    background-color: #e3f5ff!important;
+}
+.role-list.on {
+    background-color: #f6f6f6!important;
+}
+
+.selectCompany ion-header-bar,.selectRole ion-header-bar {
+    background-color: #0167b1;
+}
+
+.selectCompany ion-header-bar h1 {
+    color: #fff;
+}
+
+
+.selectCompany .list, .selectRole .list{
+    padding: 16px;
+}
+
+.selectCompany ion-header-bar button{
+    margin-left: 16px;
+}
+
+.selectCompany .list ion-item:nth-child(2n+2){
+    background-color: #f6f6f6;
+}
+
+.selectRole ion-header-bar{
+    background-color: #0167b1;
+}
+
+.selectCompany .goSetting{
+    font-size: 150%;
+    position: absolute;
+    z-index: 9;
+    left: 16px;
+    top: 13px;
+}
+
+.selectCompany .title i{
+    margin-right: 5px;
+}
+
+.selectCompany ion-header-bar a{
+    color: #fff;
+}
+
+.selectRole.pane ion-header-bar h1{
+    color:#fff ;
+}

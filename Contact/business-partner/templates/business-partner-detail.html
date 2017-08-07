@@ -1,0 +1,69 @@
+<ion-view id="businessPartnerDetail" hide-nav-bar="true" can-swipe-back="false">
+    <ion-header-bar class="bar bar-header bar-light item-input-inset" align-title="center">
+        <button ng-click="skipReturnBp()"
+                class="button back-button buttons ion-chevron-left button-clear header-item icon-back"></button>
+    </ion-header-bar>
+    <ion-content class="padding iContent" overflow-scroll="false">
+        <ion-list >
+            <ion-item class="item-remove-animate item-avatar contact-detail-without-line" type="item-text-wrap">
+                <img ng-src="{{businessPartner.imageData}}">
+
+                <div id="userInfo">
+                    <h3><span style="font-size: 135%">{{businessPartner.basicInfo.defineName}}</span></h3>
+                    <p style="font-size: small">{{businessPartner.basicInfo.mainSubsidiaryDescription}}</p>
+                </div>
+            </ion-item>
+            <div class="headerLine"></div>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="businessPartner.telephone.telephone" >
+                <i class="contact-icon-telephone"> {{translate.businessPartner.Telephone}}</i>
+                <p><a href="tel:{{businessPartner.telephone.telephone}}">{{businessPartner.telephone.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="businessPartner.telephone2.telephone" >
+                <i class="contact-icon-telephone"> {{translate.businessPartner.OtherTelephone}}</i>
+                <p><a href="tel:{{businessPartner.telephone2.telephone}}">{{businessPartner.telephone2.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line"
+                      type="item-text-wrap" data-ng-show="businessPartner.mobile.telephone">
+                <i class="contact-icon-mobile "> {{translate.businessPartner.Mobile}}</i>
+
+                <p> <a href="tel:{{businessPartner.mobile.telephone}}">{{businessPartner.mobile.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="businessPartner.teleFax.telephone">
+                <i class="contact-icon-fax "> {{translate.businessPartner.Fax}}</i>
+                <p><a ng-click="return null" id="bpDetailFax">{{businessPartner.teleFax.telephone}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap" data-ng-show="businessPartner.basicInfo.internet">
+                <i class="contact-icon-web "> {{translate.businessPartner.Website}}</i>
+
+                <p><a href="{{businessPartner.basicInfo.internet}}">{{businessPartner.basicInfo.internet}}</a></p>
+            </ion-item>
+
+            <ion-item class="item-remove-animate item-icon-right contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="businessPartner.basicInfo.email">
+                <i class="contact-icon-email "> {{translate.businessPartner.Email}}</i>
+
+                <p><a href="mailto:{{businessPartner.basicInfo.email}}">{{businessPartner.basicInfo.email}}</a></p>
+            </ion-item>
+
+            <ion-item class="contact-detail-with-line" type="item-text-wrap"
+                      data-ng-show="businessPartner.address.addressLine" ng-click="skipMap(businessPartner.address)">
+                <i class="contact-icon-address "> {{translate.businessPartner.Address}}</i>
+
+                <p class="pAddress">{{businessPartner.address.addressLine}}</p>
+            </ion-item>
+
+        </ion-list>
+        <!--<ion-list data-ng-if="isAddContact">-->
+
+        <!--<button class="button button-full button-positive" data-ng-click="addContact(newContact)">Add</button>-->
+        <!--</ion-list>-->
+    </ion-content>
+</ion-view>

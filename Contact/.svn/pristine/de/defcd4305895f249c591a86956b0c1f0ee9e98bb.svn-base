@@ -1,0 +1,13 @@
+{
+  "favorite": {
+    "delete": "删除",
+    "noData": "没有数据"
+  },
+  "favoriteDetail":{
+    "email": "电子邮箱",
+    "mobile": "移动号码",
+    "fax": "电子传真",
+    "telephone": "电话号码",
+    "OtherTelephone":"其他电话号码"
+  }
+}

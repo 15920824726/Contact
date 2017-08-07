@@ -1,0 +1,10 @@
+{
+  "companyRole": {
+    "company": {
+      "selectCompany": "Mandant auswählen"
+    },
+    "role": {
+      "selectRole": "Rolle auswählen"
+    }
+  }
+}
